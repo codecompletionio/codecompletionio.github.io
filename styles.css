@@ -13,7 +13,7 @@
 body {
     background: #fff;
     color: #000;
-    font-family: Helvetica, Arial;
+    font-family: system, Helvetica, Arial;
     text-align: center;
 }
 
@@ -26,13 +26,15 @@ body {
 }
 
 header {
-    background-color: #eee;
+    background-color: #1E1D26;
+    color: white;
 }
 
 header .wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+    height: 100px;
 }
 
 header a {
@@ -40,13 +42,21 @@ header a {
 }
 
 header .site-name {
+    position: absolute;
+    display: block;
+    background-image: url("images/dark/headerLogo.svg");
+    background-size: 200px 100px;
+    top: 0px;
+    width: 200px;
+    height: 100px;
     font-size: 1.5em;
-    color: #000;
+    color: rgba(0,0,0,0);
     font-weight: bold;
 }
 
 nav {
-    margin-top: 20px;
+    float: right;
+    margin-top: 30px;
 }
 
 nav li {
@@ -148,8 +158,7 @@ footer {
         background-color: #222;
     }
 
-    body,
-    header .site-name {
+    body {
         color: #ddd;
     }
 
