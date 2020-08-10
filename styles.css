@@ -142,6 +142,46 @@ a {
     margin-bottom: 40px;
 }
 
+.subscribe {
+    position: relative;
+    display: block;
+    margin: 8px auto;
+    width: auto;
+    vertical-align: top;
+    text-align: center;
+}
+
+.subscribe .title {
+    margin: 48px auto 12px;
+    font-size: 1.6em;
+}
+
+.subscribe .app {
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+    vertical-align: top;
+}
+
+.subscribe .app a {
+    text-decoration: none;
+}
+
+.subscribe .app a:not([href]) {
+    opacity: 0.2;
+}
+
+.subscribe .app a:not([href]) .icon {
+    opacity: 0.2;
+}
+
+.subscribe .app .icon {
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0px auto 8px;
+}
+
 .browse-all {
     display: block;
     margin-bottom: 30px;
