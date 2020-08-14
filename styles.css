@@ -5,9 +5,9 @@
 }
 
 body {
-    background: #fff;
+    background: rgb(252, 253, 255);
     color: #000;
-    font-family: system, Helvetica, Arial;
+    font-family: "Avenir Next", Helvetica, Arial;
     text-align: center;
 }
 
@@ -59,12 +59,16 @@ nav {
 
 nav li {
     display: inline-block;
-    margin: 0 12px;
+    margin: 0px 12px;
     line-height: 1.5em;
 }
 
 nav li a.selected {
-    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: black;
+    padding: 4px 10px 3px 10px;
+    margin: 0px -10px;
+    border-radius: 6px;
 }
 
 h1 {
@@ -122,15 +126,18 @@ a {
 .tag-list li,
 .tag {
     display: inline-block;
-    background-color: #000;
-    color: #ddd;
-    padding: 4px 6px;
-    border-radius: 5px;
+    background-color: rgba(104, 72, 255, 1);
+    font-family: ui-monospace, monospace;
+    color: white;
+    font-size: 0.7em;
+    padding: 3px 6px 3px 6px;
+    border-radius: 6px;
     margin-right: 5px;
 }
 
 .tag-list a,
 .tag a {
+    color: white;
     text-decoration: none;
 }
 
@@ -143,12 +150,29 @@ a {
     color: rgba(30, 20, 50, 1);
 }
 
+.content a {
+    color: rgba(104, 72, 255, 1);
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(104, 72, 255, 0.2);
+}
+
+.tagSection {
+    margin: 0px 10% 40px 10%;
+    color: rgba(30, 20, 50, 1);
+}
+
 .content .audioPlayer {
     position: relative;
     display: block;
-    margin: 32px auto;
+    margin: 16px auto 32px;
     width: 656px;
     height: 131px;
+    border-radius: 8px;
 }
 
 .content .videoPlayer {
@@ -157,16 +181,27 @@ a {
     margin: 32px auto;
     width: 656px;
     height: 369px;
+    border-radius: 8px;
 }
 
 .content p code,
 .content li code,
 .content pre {
-    background: rgba(104, 72, 255, 1);
+    font-family: ui-monospace, monospace;
+    background: #1E1D26;
     color: white;
-    font-size: 0.9em;
+}
+
+.content p code,
+.content li code {
+    font-size: 0.85em;
     border-radius: 4px;
-    padding: 3px 8px 2px;
+    padding: 3px 8px 3px;
+}
+
+.content pre {
+    padding: 6px 8px 8px 8px;
+    border-radius: 8px;
 }
 
 .content h2 {
@@ -176,6 +211,14 @@ a {
 .content p {
     margin: 12px 0px 16px;
     line-height: 1.6;
+}
+
+.content p.metadata {
+    font-style: italic;
+    font-family: ui-monospace, monospace;
+    margin: 16px 0px;
+    font-size: 0.7em;
+    color: rgba(30, 20, 50, 0.5 );
 }
 
 .content a {
@@ -325,13 +368,17 @@ footer {
         margin: 0px 0px 40px 0px;
     }
     
+    .tagSection {
+        margin: 0px 0px 40px 0px;
+    }
+    
     .content .audioPlayer {
         width: 300px;
         height: 60px;
     }
 
     .content .videoPlayer {
-        width: 400px;
+        width: 300px;
         height: 169px;
     }
 }
