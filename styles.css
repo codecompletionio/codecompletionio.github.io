@@ -202,6 +202,7 @@ a {
 .content pre {
     padding: 6px 8px 8px 8px;
     border-radius: 8px;
+    margin: 24px auto;
 }
 
 .content h2 {
@@ -245,7 +246,7 @@ a {
     padding: 8px 16px;
 }
 
-.content details blockquote {
+.content blockquote {
     border-left: 4px solid rgba(30, 20, 50, 0.3);
     padding-left: 8px;
     color: rgba(30, 20, 50, 0.75);
