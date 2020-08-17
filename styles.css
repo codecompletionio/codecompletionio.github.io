@@ -188,7 +188,7 @@ a {
 .content li code,
 .content pre {
     font-family: ui-monospace, monospace;
-    background: #1E1D26;
+    background: rgba(45, 43, 85, 1);
     color: white;
 }
 
@@ -200,9 +200,64 @@ a {
 }
 
 .content pre {
-    padding: 6px 8px 8px 8px;
+    padding: 11px 8px 12px 8px;
     border-radius: 8px;
     margin: 24px auto;
+}
+
+.content pre code {
+    display: block;
+    color: white;
+    line-height: 1.4em;
+    overflow-x: auto;
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+}
+
+.content pre code.splashlineNumbers {
+    float: left;
+    color: rgba(92, 90, 132, 1);
+    padding-left: 12px;
+    padding-right: 6px;
+    text-align: right;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.content pre code .splashkeyword {
+    color: rgba(255, 157, 0, 1);
+}
+
+.content pre code .splashtype {
+    color: rgba(158, 255, 255, 1);
+}
+
+.content pre code .splashcall {
+    color: rgba(73, 159, 159, 1);
+}
+
+.content pre code .splashproperty {
+    color: rgba(73, 159, 159, 1);
+}
+
+.content pre code .splashnumber {
+    color: #db6f57;
+}
+
+.content pre code .splashstring {
+    color: rgba(165, 255, 144, 1);
+}
+
+.content pre code .splashcomment {
+    color: rgba(179, 98, 255, 1);
+}
+
+.content pre code .splashdotAccess {
+    color: #92b300;
 }
 
 .content h2 {
@@ -237,13 +292,22 @@ a {
     line-height: 1.6;
 }
 
+.content details {
+    background-color: rgba(255, 246, 218, 1);
+    padding: 6px 11px 0px;
+    border-radius: 8px;
+    border-color: rgba(255, 227, 186, 1);
+    border-style: solid;
+    border-width: 3px;
+}
+
 .content details summary {
     font-style: oblique;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .content details div.details {
-    padding: 8px 16px;
+    padding: 0px 16px;
 }
 
 .content blockquote {
