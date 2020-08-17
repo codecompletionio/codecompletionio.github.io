@@ -245,7 +245,7 @@ a {
 }
 
 .content pre code .splashnumber {
-    color: #db6f57;
+    color: rgba(235, 110, 139, 1);
 }
 
 .content pre code .splashstring {
@@ -257,7 +257,7 @@ a {
 }
 
 .content pre code .splashdotAccess {
-    color: #92b300;
+    color: rgba(242, 209, 70, 1);
 }
 
 .content h2 {
