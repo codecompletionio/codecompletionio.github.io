@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="og:site_name" content="CodeCompletion.io"/>
-        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-1"/>
-        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-1"/>
-        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-1"/>
-        <title>Episode 1: File, New, New Project… | CodeCompletion.io</title>
-        <meta name="twitter:title" content="Episode 1: File, New, New Project… | CodeCompletion.io"/>
-        <meta name="og:title" content="Episode 1: File, New, New Project… | CodeCompletion.io"/>
-        <meta name="description" content="We discuss how to layout your UI using compositional layouts and diffable data sources, different ways to bring an iPhone UI to the iPad, and ways Apple could make the App Store a better place for both developers and users."/>
-        <meta name="twitter:description" content="We discuss how to layout your UI using compositional layouts and diffable data sources, different ways to bring an iPhone UI to the iPad, and ways Apple could make the App Store a better place for both developers and users."/>
-        <meta name="og:description" content="We discuss how to layout your UI using compositional layouts and diffable data sources, different ways to bring an iPhone UI to the iPad, and ways Apple could make the App Store a better place for both developers and users."/>
+        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-2"/>
+        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-2"/>
+        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-2"/>
+        <title>Episode 2: Available in Human Sizes | CodeCompletion.io</title>
+        <meta name="twitter:title" content="Episode 2: Available in Human Sizes | CodeCompletion.io"/>
+        <meta name="og:title" content="Episode 2: Available in Human Sizes | CodeCompletion.io"/>
+        <meta name="description" content="We discuss the benefits of finding your niche and specializing when looking for new opportunities, and what would happen if we considered the App Store to be simply a provider, much like an ISP."/>
+        <meta name="twitter:description" content="We discuss the benefits of finding your niche and specializing when looking for new opportunities, and what would happen if we considered the App Store to be simply a provider, much like an ISP."/>
+        <meta name="og:description" content="We discuss the benefits of finding your niche and specializing when looking for new opportunities, and what would happen if we considered the App Store to be simply a provider, much like an ISP."/>
         <meta name="twitter:card" content="summary"/>
         <link rel="stylesheet" href="/styles.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,49 +46,47 @@
         <div class="wrapper">
             <article>
                 <div class="content">
-                    <h1>Episode 1: File, New, New Project…</h1>
-                    <p class="metadata">// Episode 1 was originally recorded on Friday, August 7, 2020, and was released on Monday, August 10, 2020.
-                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Spencer Curtis and Ben Gohlke.
-                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+h53fLe7-?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>How to layout your UI using compositional layouts and diffable data sources.</li><li>Different ways to bring an iPhone UI to the iPad.</li><li>Ways Apple could make the App Store a better place for both developers and users.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>Without using a variable as a flag, how can you skip to the next iteration of an outer loop, from inside an inner loop?</blockquote><pre><code class="splashlineNumbers">1
+                    <h1>Episode 2: Available in Human Sizes</h1>
+                    <p class="metadata">// Episode 2 was originally recorded on Friday, August 14, 2020, and was released on Monday, August 17, 2020.
+                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Ben Gohlke, Fernando Olivares, and Johnny Hicks.
+                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+FBUJ2Fz2?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 2! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>Finding your niche and the benefits in specializing when looking for new opportunities.</li><li>How beneficial would it be to consider the App Store as simply a provider, much like an ISP.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>Can you explain what is wrong with the following code, how it can break, and show how to fix it?</blockquote><pre><code class="splashlineNumbers">1
 2
 3
 4
 5
 6
 7
-8
-</code><code><span class="splashkeyword">for</span> row <span class="splashkeyword">in</span> rows {
-    <span class="splashkeyword">for</span> column <span class="splashkeyword">in</span> columns {
-        <span class="splashkeyword">if</span> column.<span class="splashproperty">shouldSkipToNextRow</span> {
-            <span class="splashcomment">// how do you get to the next row?</span>
-        }
-    }
-    <span class="splashcall">finishUpRow</span>(row)
+</code><code><span class="splashkeyword">struct</span> Person {
+    <span class="splashkeyword">var</span> name: <span class="splashtype">String</span>
+    <span class="splashkeyword">var</span> age: <span class="splashtype">Double</span>
 }
-</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>Known as the key with the apple logo, the command key has been represented by the unicode character known as <code>PLACE OF INTEREST SIGN</code> since the Apple III.</li></ol><ol start="2"><li>Used on many systems that are very different from Macs, the control key on Mac OS differentiates itself from the competition by using the <code>UP ARROWHEAD</code> unicode character rather than the abbreviation, bar, or traditional caret notations.</li></ol><ol start="3"><li>Located between the control and command keys on the keyboard, the option key is unoriginally called <code>OPTION KEY</code> in the unicode specification, but was also known as the “closed apple key” on Apple II series computers.</li></ol><ol start="4"><li>Despite being used on some of the earliest computers, the shift modifier on Apple keyboards simply uses the <code>UPWARDS WHITE ARROW</code> character, an approximation of the standardized Level 2 Select key’s original symbol.</li></ol><details><summary>Compilation Results</summary><div class="details">
 
-<p>Ben went first, followed by Spencer. Let's check how they did!</p>
+<span class="splashkeyword">let</span> person = <span class="splashcall">askForPerson</span>()
+<span class="splashtype">NSLog</span>(<span class="splashstring">"</span>\(person.<span class="splashproperty">name</span>) <span class="splashstring">is %.2f years old today!"</span>, person.<span class="splashproperty">age</span>)
+</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>A key player in pioneering the digital publishing space, Apple made several printer models in 80s and 90s such as the popular ImageWriter and LaserWriter, but they also made the Apple 410 Color Plotter, a printer that used a stylus along with a selection of inks to literally draw shapes and text on the page.</li></ol><ol start="2"><li>Available for sale for just a couple years, iPod Socks were a series of pouches for iPods woven like socks, and came as a package with six colors: grey, orange, pink, blue, green, and purple. For a limited time, they were also available in human sizes at the Apple Company Store in Cupertino.</li></ol><ol start="3"><li>Known now as a feature that allows videos to be quickly taken by pressing and holding the shutter button on modern iPhones, the Apple QuickTake was a line of video cameras that could be used tethered to a Mac, or on the go thanks to AA batteries.</li></ol><ol start="4"><li>Released in 2006, the iPod Radio Remote was an attachment for then-new iPods that was shaped like a then-unreleased clip-style iPod Shuffle, that allowed compatible iPod users to use their iPods as an FM Radio tuner.</li></ol><details><summary>Compilation Results</summary><div class="details">
 
-<blockquote>4. Despite being used on some of the earliest computers, the shift modifier on Apple keyboards simply uses the <code>UPWARDS WHITE ARROW</code> character, an approximation of the standardized Level 2 Select key’s original symbol.</blockquote>
+<p>Ben had the misfortune of going first again to show the others the ropes, followed by Fernando and Johnny. Let's check how they did!</p>
 
-<p>Everyone thought this was true, and it is indeed a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Shift_key">Learn More →</a></p>
+<blockquote>4. Released in 2006, the iPod Radio Remote was an attachment for then-new iPods that was shaped like a then-unreleased clip-style iPod Shuffle, that allowed compatible iPod users to use their iPods as an FM Radio tuner.</blockquote>
 
-<blockquote>3. Located between the control and command keys on the keyboard, the option key is unoriginally called <code>OPTION KEY</code> in the unicode specification, but was also known as the “closed apple key” on Apple II series computers.</blockquote>
+<p>Johnny doubted this product ever existed and was the compiler error, but unfortunately it was a <em>code completion</em>! <a href="https://www.apple.com/newsroom/2006/01/10Apple-Announces-the-iPod-Radio-Remote/">Learn More →</a></p>
 
-<p>Spencer thought this was true, while Ben thought this was the error, but it was also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Control_key">Learn More →</a></p>
+<blockquote>3. Known now as a feature that allows videos to be quickly taken by pressing and holding the shutter button on modern iPhones, the Apple QuickTake was a line of video cameras that could be used tethered to a Mac, or on the go thanks to AA batteries.</blockquote>
 
-<blockquote>2. Used on many systems that are very different from Macs, the control key on Mac OS differentiates itself from the competition by using the <code>UP ARROWHEAD</code> unicode character rather than the abbreviation, bar, or traditional caret notations.</blockquote>
+<p>Fernando fumbled last minute and chose this as the error, but it was also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Apple_QuickTake">Learn More →</a></p>
 
-<p>Spencer thought this was the error, but it was also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Option_key">Learn More →</a></p>
+<blockquote>2. Available for sale for just a couple years, iPod Socks were a series of pouches for iPods woven like socks, and came as a package with six colors: grey, orange, pink, blue, green, and purple. For a limited time, they were also available in human sizes at the Apple Company Store in Cupertino.</blockquote>
+
+<p>Everyone thought this was true, but it was in fact the <strong>compiler error</strong>, since iPod socks were not only available for sale for nearly a decade, but were unfortunately never available in human sizes… <a href="https://appleinsider.com/articles/12/09/26/apple-removes-ipod-socks-from-online-store">Learn More →</a></p>
 
 <p>Which means that…</p>
 
-<blockquote>1. Known as the key with the apple logo, the command key has been represented by the unicode character known as <code>PLACE OF INTEREST SIGN</code> since the Macintosh introduced in 1984, though the command key itself was present on the Apple III introduced in 1980, but it was represented by an open Apple logo instead.</blockquote>
+<blockquote>1. A key player in pioneering the digital publishing space, Apple made several printer models in 80s and 90s such as the popular ImageWriter and LaserWriter, but they also made the Apple 410 Color Plotter, a printer that used a stylus along with a selection of inks to literally draw shapes and text on the page.</blockquote>
 
-<p>is in fact the <strong>compiler error</strong>! <a href="https://en.wikipedia.org/wiki/Option_key">Learn More →</a></p>
+<p>…which Ben thought was a bit too outlandish, was still a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Apple_410_Color_Plotter">Learn More →</a></p>
 
-</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/app/apple-store/id1448552588?pt=14724&ct=CodeCompletion1&mt=8">Huuungry</a>. <a href="https://apps.apple.com/app/apple-store/id1448552588?pt=14724&ct=CodeCompletion1&mt=8">Click here</a> or search for Huuungry on the iOS App Store today to give it a try.</p>
-                    <h2>📺 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/Dyfwl2UFWNY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/us/app/mystiko/id1148340942?pt=14724&ct=CodeCompletion1&mt=8">Mystiko</a>. <a href="https://apps.apple.com/us/app/mystiko/id1148340942?pt=14724&ct=CodeCompletion1&mt=8">Click here</a> or search for Mystiko on the iMessage App Store today to give it a try.</p>
+                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/1nKP4mz0dpw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="subscribe">
                         <div class="title">Listen for free in your favorite podcast app:</div>
                         <div class="app">
@@ -122,16 +120,16 @@
                     <span>Tagged with: </span>
                     <ul class="tag-list">
                         <li>
-                            <a href="/tags/uicollectionview">UICollectionView</a>
+                            <a href="/tags/specialization">Specialization</a>
                         </li>
                         <li>
-                            <a href="/tags/ipad">iPad</a>
+                            <a href="/tags/frameworks">Frameworks</a>
                         </li>
                         <li>
                             <a href="/tags/app-store">App Store</a>
                         </li>
                         <li>
-                            <a href="/tags/unicode">Unicode</a>
+                            <a href="/tags/ipod-socks">iPod Socks</a>
                         </li>
                     </ul>
                 </div>
