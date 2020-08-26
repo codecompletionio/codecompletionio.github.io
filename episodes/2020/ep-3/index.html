@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="og:site_name" content="CodeCompletion.io"/>
-        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-2"/>
-        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-2"/>
-        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-2"/>
-        <title>Episode 2: Available in Human Sizes | CodeCompletion.io</title>
-        <meta name="twitter:title" content="Episode 2: Available in Human Sizes | CodeCompletion.io"/>
-        <meta name="og:title" content="Episode 2: Available in Human Sizes | CodeCompletion.io"/>
-        <meta name="description" content="We discuss the benefits of finding your niche and specializing when looking for new opportunities, and what would happen if we considered the App Store to be simply a provider, much like an ISP."/>
-        <meta name="twitter:description" content="We discuss the benefits of finding your niche and specializing when looking for new opportunities, and what would happen if we considered the App Store to be simply a provider, much like an ISP."/>
-        <meta name="og:description" content="We discuss the benefits of finding your niche and specializing when looking for new opportunities, and what would happen if we considered the App Store to be simply a provider, much like an ISP."/>
+        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-3"/>
+        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-3"/>
+        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-3"/>
+        <title>Episode 3: What's Clascal? | CodeCompletion.io</title>
+        <meta name="twitter:title" content="Episode 3: What's Clascal? | CodeCompletion.io"/>
+        <meta name="og:title" content="Episode 3: What's Clascal? | CodeCompletion.io"/>
+        <meta name="description" content="We discuss transitioning between Xcode toolchain versions, web development in Swift, and how to escapse tutorial hell."/>
+        <meta name="twitter:description" content="We discuss transitioning between Xcode toolchain versions, web development in Swift, and how to escapse tutorial hell."/>
+        <meta name="og:description" content="We discuss transitioning between Xcode toolchain versions, web development in Swift, and how to escapse tutorial hell."/>
         <meta name="twitter:card" content="summary"/>
         <link rel="stylesheet" href="/styles.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,47 +46,51 @@
         <div class="wrapper">
             <article>
                 <div class="content">
-                    <h1>Episode 2: Available in Human Sizes</h1>
-                    <p class="metadata">// Episode 2 was originally recorded on Friday, August 14, 2020, and was released on Monday, August 17, 2020.
-                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Ben Gohlke, Fernando Olivares, and Johnny Hicks.
-                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+FBUJ2Fz2?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 2! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>Finding your niche and the benefits in specializing when looking for new opportunities.</li><li>How beneficial would it be to consider the App Store as simply a provider, much like an ISP.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>Can you explain what is wrong with the following code, how it can break, and show how to fix it?</blockquote><pre><code class="splashlineNumbers">1
+                    <h1>Episode 3: What's Clascal?</h1>
+                    <p class="metadata">// Episode 3 was originally recorded on Monday, August 24, 2020, and was released on Wednesday, August 26, 2020.
+                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Johnny Hicks, Fernando Olivares, and Spencer Curtis.
+                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+04M-KlxK?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 3! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>Transitioning between Xcode toolchains when you want to use new SDK features, but still be able to compile from an older version of Xcode.</li><li>Doing web development using Swift, by making use of John Sundell's Publish and Vapor.</li><li>How to get out of tutorial hell, and what next steps a fledgling developer could take.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>Review the following code — why might some developers discourage the pattern shown below?</blockquote><pre><code class="splashlineNumbers">1
 2
 3
 4
 5
 6
 7
-</code><code><span class="splashkeyword">struct</span> Person {
-    <span class="splashkeyword">var</span> name: <span class="splashtype">String</span>
-    <span class="splashkeyword">var</span> age: <span class="splashtype">Double</span>
+8
+9
+</code><code><span class="splashkeyword">override func</span> tableView(<span class="splashkeyword">_</span> tableView: <span class="splashtype">UITableView</span>,
+                        cellForRowAt indexPath: <span class="splashtype">IndexPath</span>) -&gt; <span class="splashtype">UITableViewCell</span> {
+    <span class="splashkeyword">guard let</span> cell = tableView.<span class="splashcall">dequeueReusableCell</span>(withIdentifier: <span class="splashstring">"DateCell"</span>,
+                                                   for: indexPath) <span class="splashkeyword">as</span>? <span class="splashtype">DateCell</span>
+          <span class="splashkeyword">else</span> { <span class="splashkeyword">return</span> <span class="splashtype">DateCell</span>() }
+    
+    cell.<span class="splashproperty">date</span> = dates[indexPath.<span class="splashproperty">row</span>]
+    <span class="splashkeyword">return</span> cell
 }
+</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>Swift started its development as far back as 2010 as an evolution of the work Apple was already doing improving the Objective-C language with features like Automatic reference counting, zeroing weak references, and blocks.</li></ol><ol start="2"><li>Available since the very first release of Mac OS X, Java bindings to Cocoa called the Java Bridge were available to help bring new developers to the fledgling operating system, though Mac OS X 10.4 was the first release to introduce many new APIs not included in the Java bindings.</li></ol><ol start="3"><li>Now at version 4.0, Objective-C was originally invented in 1984 by Brad Cox, and production versions did not even have a concept of manual reference counting as a part of the main runtime or in FoundationKit even in NeXTStep 3.0.</li></ol><ol start="4"><li>Clascal was a language Apple developed for the Lisa Workshop development system as a version of Pascal with object oriented features, and was supported in all versions of Classic Mac OS as a way to make apps using the MacApp framework, also written in Clascal.</li></ol><details><summary>Compilation Results</summary><div class="details">
 
-<span class="splashkeyword">let</span> person = <span class="splashcall">askForPerson</span>()
-<span class="splashtype">NSLog</span>(<span class="splashstring">"</span>\(person.<span class="splashproperty">name</span>) <span class="splashstring">is %.2f years old today!"</span>, person.<span class="splashproperty">age</span>)
-</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>A key player in pioneering the digital publishing space, Apple made several printer models in 80s and 90s such as the popular ImageWriter and LaserWriter, but they also made the Apple 410 Color Plotter, a printer that used a stylus along with a selection of inks to literally draw shapes and text on the page.</li></ol><ol start="2"><li>Available for sale for just a couple years, iPod Socks were a series of pouches for iPods woven like socks, and came as a package with six colors: grey, orange, pink, blue, green, and purple. For a limited time, they were also available in human sizes at the Apple Company Store in Cupertino.</li></ol><ol start="3"><li>Known now as a feature that allows videos to be quickly taken by pressing and holding the shutter button on modern iPhones, the Apple QuickTake was a line of video cameras that could be used tethered to a Mac, or on the go thanks to AA batteries.</li></ol><ol start="4"><li>Released in 2006, the iPod Radio Remote was an attachment for then-new iPods that was shaped like a then-unreleased clip-style iPod Shuffle, that allowed compatible iPod users to use their iPods as an FM Radio tuner.</li></ol><details><summary>Compilation Results</summary><div class="details">
+<p>Spencer went first, followed by Johnny and Fernando. Let's see how they did!</p>
 
-<p>Ben had the misfortune of going first again to show the others the ropes, followed by Fernando and Johnny. Let's check how they did!</p>
+<blockquote>1. Swift started its development as far back as 2010 as an evolution of the work Apple was already doing improving the Objective-C language with features like Automatic reference counting, zeroing weak references, and blocks.</blockquote>
 
-<blockquote>4. Released in 2006, the iPod Radio Remote was an attachment for then-new iPods that was shaped like a then-unreleased clip-style iPod Shuffle, that allowed compatible iPod users to use their iPods as an FM Radio tuner.</blockquote>
+<p>Everyone thought this was true, and it is indeed a <em>code completion</em>! <a href="https://twitter.com/clattner_llvm/status/1284156940747042817">Learn&nbsp;More&nbsp;→</a></p>
 
-<p>Johnny doubted this product ever existed and was the compiler error, but unfortunately it was a <em>code completion</em>! <a href="https://www.apple.com/newsroom/2006/01/10Apple-Announces-the-iPod-Radio-Remote/">Learn&nbsp;More&nbsp;→</a></p>
+<blockquote>2. Available since the very first release of Mac OS X, Java bindings to Cocoa called the Java Bridge were available to help bring new developers to the fledgling operating system, though Mac OS X 10.4 was the first release to introduce many new APIs not included in the Java bindings.</blockquote>
 
-<blockquote>3. Known now as a feature that allows videos to be quickly taken by pressing and holding the shutter button on modern iPhones, the Apple QuickTake was a line of video cameras that could be used tethered to a Mac, or on the go thanks to AA batteries.</blockquote>
+<p>Everyone thought this was true, and it is indeed a <em>code completion</em>! <a href="http://mirror.informatimago.com/next/developer.apple.com/releasenotes/Cocoa/AppKitOlderNotes.html#PBNotes">Learn&nbsp;More&nbsp;→</a></p>
 
-<p>Fernando fumbled last minute and chose this as the error, but it was also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Apple_QuickTake">Learn&nbsp;More&nbsp;→</a></p>
+<blockquote>3. Now at version 4.0, Objective-C was originally invented in 1984 by Brad Cox, and production versions did not even have a concept of manual reference counting as a part of the main runtime or in FoundationKit even in NeXTStep 3.0.</blockquote>
 
-<blockquote>2. Available for sale for just a couple years, iPod Socks were a series of pouches for iPods woven like socks, and came as a package with six colors: grey, orange, pink, blue, green, and purple. For a limited time, they were also available in human sizes at the Apple Company Store in Cupertino.</blockquote>
+<p>Almost everyone thought this was true, but Fernando had their doubts that Objective-C ever reached past version 2.0, which is absolutely did, making this a <em>code completion</em> as well! <a href="https://en.wikipedia.org/wiki/Objective-C">Learn&nbsp;More&nbsp;→</a> <a href="https://simson.net/ref/1993/NeXTSTEP3.0.pdf">More&nbsp;→</a> <a href="https://stackoverflow.com/a/15925553/1565236">More&nbsp;→</a> <a href="https://opensource.apple.com/tarballs/objc4/">More&nbsp;→</a></p>
 
-<p>Everyone thought this was true, but it was in fact the <strong>compiler error</strong>, since iPod socks were not only available for sale for nearly a decade, but were unfortunately never available in human sizes… <a href="https://appleinsider.com/articles/12/09/26/apple-removes-ipod-socks-from-online-store">Learn&nbsp;More&nbsp;→</a></p>
+<p>Which leaves…</p>
 
-<p>Which means that…</p>
+<blockquote>4. Clascal was a language Apple developed for the Lisa Workshop development system as a version of Pascal with object oriented features, and was supported in all versions of Classic Mac OS as a way to make apps using the MacApp framework, also written in Clascal.</blockquote>
 
-<blockquote>1. A key player in pioneering the digital publishing space, Apple made several printer models in 80s and 90s such as the popular ImageWriter and LaserWriter, but they also made the Apple 410 Color Plotter, a printer that used a stylus along with a selection of inks to literally draw shapes and text on the page.</blockquote>
+<p>…which both Spencer and Johnny correctly guessed was the <strong>compiler error</strong>, but only because they never heard of Clascal, which was in fact a real language Apple once used! Unfortunately, Clascal did not survive the entire Classic Mac OS era, which made it the false statement after all… <a href="https://en.wikipedia.org/wiki/Object_Pascal">Learn More&nbsp;→</a></p>
 
-<p>…which Ben thought was a bit too outlandish, was still a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Apple_410_Color_Plotter">Learn&nbsp;More&nbsp;→</a></p>
-
-</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/us/app/mystiko/id1148340942?pt=14724&ct=CodeCompletion1&mt=8">Mystiko</a>. <a href="https://apps.apple.com/us/app/mystiko/id1148340942?pt=14724&ct=CodeCompletion1&mt=8">Click here</a> or search for Mystiko on the iMessage App Store today to give it a try.</p>
-                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/1nKP4mz0dpw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/app/apple-store/id1448552588?pt=14724&ct=CodeCompletion1&mt=8">Huuungry</a>. <a href="https://apps.apple.com/app/apple-store/id1448552588?pt=14724&ct=CodeCompletion1&mt=8">Click here</a> or search for Huuungry on the iOS App Store today to give it a try.</p>
+                    <h2>📺 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/1DeJeFGl5BY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="subscribe">
                         <div class="title">Listen for free in your favorite podcast app:</div>
                         <div class="app">
@@ -120,16 +124,22 @@
                     <span>Tagged with: </span>
                     <ul class="tag-list">
                         <li>
-                            <a href="/tags/specialization">Specialization</a>
+                            <a href="/tags/xcode">Xcode</a>
                         </li>
                         <li>
-                            <a href="/tags/frameworks">Frameworks</a>
+                            <a href="/tags/swift">Swift</a>
                         </li>
                         <li>
-                            <a href="/tags/app-store">App Store</a>
+                            <a href="/tags/serverside-development">Server-side Development</a>
                         </li>
                         <li>
-                            <a href="/tags/ipod-socks">iPod Socks</a>
+                            <a href="/tags/web-development">Web Development</a>
+                        </li>
+                        <li>
+                            <a href="/tags/publish">Publish</a>
+                        </li>
+                        <li>
+                            <a href="/tags/vapor">Vapor</a>
                         </li>
                         <li>
                             <a href="/tags/junior-development">Junior Development</a>
