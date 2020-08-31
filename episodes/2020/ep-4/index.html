@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="og:site_name" content="CodeCompletion.io"/>
-        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-1"/>
-        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-1"/>
-        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-1"/>
-        <title>Episode 1: File, New, New Project… | CodeCompletion.io</title>
-        <meta name="twitter:title" content="Episode 1: File, New, New Project… | CodeCompletion.io"/>
-        <meta name="og:title" content="Episode 1: File, New, New Project… | CodeCompletion.io"/>
-        <meta name="description" content="We discuss how to layout your UI using compositional layouts and diffable data sources, different ways to bring an iPhone UI to the iPad, and ways Apple could make the App Store a better place for both developers and users."/>
-        <meta name="twitter:description" content="We discuss how to layout your UI using compositional layouts and diffable data sources, different ways to bring an iPhone UI to the iPad, and ways Apple could make the App Store a better place for both developers and users."/>
-        <meta name="og:description" content="We discuss how to layout your UI using compositional layouts and diffable data sources, different ways to bring an iPhone UI to the iPad, and ways Apple could make the App Store a better place for both developers and users."/>
+        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-4"/>
+        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-4"/>
+        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-4"/>
+        <title>Episode 4: Clocking in at 392 charact… | CodeCompletion.io</title>
+        <meta name="twitter:title" content="Episode 4: Clocking in at 392 charact… | CodeCompletion.io"/>
+        <meta name="og:title" content="Episode 4: Clocking in at 392 charact… | CodeCompletion.io"/>
+        <meta name="description" content="We discuss interviewing in 2020, getting acclimated to a new team while remote, and the real truth behind Test Driven Development, all with our special guest Dan Morse!"/>
+        <meta name="twitter:description" content="We discuss interviewing in 2020, getting acclimated to a new team while remote, and the real truth behind Test Driven Development, all with our special guest Dan Morse!"/>
+        <meta name="og:description" content="We discuss interviewing in 2020, getting acclimated to a new team while remote, and the real truth behind Test Driven Development, all with our special guest Dan Morse!"/>
         <meta name="twitter:card" content="summary"/>
         <link rel="stylesheet" href="/styles.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,10 +46,10 @@
         <div class="wrapper">
             <article>
                 <div class="content">
-                    <h1>Episode 1: File, New, New Project…</h1>
-                    <p class="metadata">// Episode 1 was originally recorded on Friday, August 7, 2020, and was released on Monday, August 10, 2020.
-                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Spencer Curtis and Ben Gohlke.
-                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+h53fLe7-?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>How to layout your UI using compositional layouts and diffable data sources.</li><li>Different ways to bring an iPhone UI to the iPad.</li><li>Ways Apple could make the App Store a better place for both developers and users.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>Without using a variable as a flag, how can you skip to the next iteration of an outer loop, from inside an inner loop?</blockquote><pre><code class="splashlineNumbers">1
+                    <h1>Episode 4: Clocking in at 392 charact…</h1>
+                    <p class="metadata">// Episode 4 was originally recorded on Friday, August 28, 2020, and was released on Monday, August 31, 2020.
+                        <br/>// This episode was hosted by Dimitri Bouniol, with co-host Ben Gohlke, and special guest Dan Morse.
+                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+q8p2eqZk?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 4! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show! This time, we are joined by special guest, Dan Morse! Be sure to follow them on Twitter at <a href="https://twitter.com/danandami">@danandami</a>.</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>What interviews are like in 2020 when everything is remote.</li><li>How to get acclimated to a new team as a junior developer.</li><li>The pros and cons of Test Driven Development.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>Invert and reduce the following if statement without introducing any new variables or statements:</blockquote><pre><code class="splashlineNumbers">1
 2
 3
 4
@@ -57,38 +57,46 @@
 6
 7
 8
-</code><code><span class="splashkeyword">for</span> row <span class="splashkeyword">in</span> rows {
-    <span class="splashkeyword">for</span> column <span class="splashkeyword">in</span> columns {
-        <span class="splashkeyword">if</span> column.<span class="splashproperty">shouldSkipToNextRow</span> {
-            <span class="splashcomment">// how do you get to the next row?</span>
-        }
-    }
-    <span class="splashcall">finishUpRow</span>(row)
+9
+10
+11
+12
+</code><code><span class="splashkeyword">let</span> boolA, boolB, boolC: <span class="splashtype">Bool</span>
+<span class="splashkeyword">let</span> intA, intB, intC: <span class="splashtype">Int</span>
+
+<span class="splashcomment">// TODO: Invert this statement so we don't need an else block:</span>
+<span class="splashkeyword">if</span> boolA &amp;&amp; !boolB || (boolC &amp;&amp; intA == intB || intC &gt; intA) {
+    <span class="splashcomment">// Do Nothing</span>
+} <span class="splashkeyword">else</span> {
+    <span class="splashcall">print</span>(<span class="splashstring">"The condition above was not met. Do the thing!"</span>)
 }
-</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>Known as the key with the apple logo, the command key has been represented by the unicode character known as <code>PLACE OF INTEREST SIGN</code> since the Apple III.</li></ol><ol start="2"><li>Used on many systems that are very different from Macs, the control key on Mac OS differentiates itself from the competition by using the <code>UP ARROWHEAD</code> unicode character rather than the abbreviation, bar, or traditional caret notations.</li></ol><ol start="3"><li>Located between the control and command keys on the keyboard, the option key is unoriginally called <code>OPTION KEY</code> in the unicode specification, but was also known as the “closed apple key” on Apple II series computers.</li></ol><ol start="4"><li>Despite being used on some of the earliest computers, the shift modifier on Apple keyboards simply uses the <code>UPWARDS WHITE ARROW</code> character, an approximation of the standardized Level 2 Select key’s original symbol.</li></ol><details><summary>Compilation Results</summary><div class="details">
 
-<p>Ben went first, followed by Spencer. Let's check how they did!</p>
+<span class="splashcomment">// !(boolA &amp;&amp; !boolB || (boolC &amp;&amp; intA == intB || intC &gt; intA))
+// ... is not a solution!</span>
+</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>Clocking in at 392 characters, <code>encode­Reprojection­To­Command­Buffer:­source­Texture:­previous­Texture:­destination­Texture:­previous­Luminance­Moments­Texture:­destination­Luminance­Moments­Texture:­source­Texture2:­previous­Texture2:­destination­Texture2:­previous­Luminance­Moments­Texture2:­destination­Luminance­Moments­Texture2:­previous­Frame­Count­Texture:­destination­Frame­Count­Texture:­motion­Vector­Texture:­depth­Normal­Texture:­previous­Depth­Normal­Texture:­</code> is the longest public method name as of iOS 13, and surely does something, but it’s documentation is still marked as No Overview Available.</li></ol><ol start="2"><li>The smallest on this list, <code>convolve­With­Destination:temp­Buffer:­source­Offset­To­Region­Of­InterestX:­source­Offset­To­Region­Of­InterestY:­kernel:­kernel­Height:­kernel­Width:­divisor:­background­Color:­options:­</code> is one of many related Objective-C methods in the Accelerate framework for manipulating images.</li></ol><ol start="3"><li>A private Method on UIViewController, <code>attention­Class­Dump­User:­yes­Its­Us­Again:­although­Swizzling­And­Overriding­Private­Methods­Is­Fun:­it­Wasnt­Much­Fun­When­Your­App­Stopped­Working:­please­Refrain­From­Doing­So­In­The­Future­Okay­Thanks­Bye:</code> is actually a no-op, though is used by some third party libraries.</li></ol><ol start="4"><li>Related to CarPlay, <code>init­With­Enable­Fan:­enable­Air­Conditioner:­enable­Climate­Control:­enable­Auto­Mode:­air­Circulation­Mode:­fan­Speed­Index:­fan­Speed­Percentage:­relative­Fan­Speed­Setting:­temperature:­relative­Temperature­Setting:­climate­Zone:</code> is a public method with full online documentation, though now deprecated.</li></ol><details><summary>Compilation Results</summary><div class="details">
 
-<blockquote>4. Despite being used on some of the earliest computers, the shift modifier on Apple keyboards simply uses the <code>UPWARDS WHITE ARROW</code> character, an approximation of the standardized Level 2 Select key’s original symbol.</blockquote>
+<p>Our special guest went first, followed by Ben. Let's see how they did!</p>
 
-<p>Everyone thought this was true, and it is indeed a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Shift_key">Learn&nbsp;More&nbsp;→</a></p>
+<blockquote>1. Clocking in at 392 characters, <code>encode­Reprojection­To­Command­Buffer:­source­Texture:­previous­Texture:­destination­Texture:­previous­Luminance­Moments­Texture:­destination­Luminance­Moments­Texture:­source­Texture2:­previous­Texture2:­destination­Texture2:­previous­Luminance­Moments­Texture2:­destination­Luminance­Moments­Texture2:­previous­Frame­Count­Texture:­destination­Frame­Count­Texture:­motion­Vector­Texture:­depth­Normal­Texture:­previous­Depth­Normal­Texture:­</code> is the longest public method name as of iOS 13, and surely does something, but it’s documentation is still marked as No Overview Available.</blockquote>
 
-<blockquote>3. Located between the control and command keys on the keyboard, the option key is unoriginally called <code>OPTION KEY</code> in the unicode specification, but was also known as the “closed apple key” on Apple II series computers.</blockquote>
+<p>Everyone thought this was true, and it is indeed a <em>code completion</em>! It actually beats out second place by over 100 characters… <a href="https://developer.apple.com/documentation/metalperformanceshaders/mpssvgf/3143562-encodereprojectiontocommandbuffe?language=objc">Learn&nbsp;More&nbsp;→</a> <a href="longest-method-names">More&nbsp;→</a></p>
 
-<p>Spencer thought this was true, while Ben thought this was the error, but it was also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Control_key">Learn&nbsp;More&nbsp;→</a></p>
+<blockquote>2. The smallest on this list, <code>convolve­With­Destination:temp­Buffer:­source­Offset­To­Region­Of­InterestX:­source­Offset­To­Region­Of­InterestY:­kernel:­kernel­Height:­kernel­Width:­divisor:­background­Color:­options:­</code> is one of many related Objective-C methods in the Accelerate framework for manipulating images.</blockquote>
 
-<blockquote>2. Used on many systems that are very different from Macs, the control key on Mac OS differentiates itself from the competition by using the <code>UP ARROWHEAD</code> unicode character rather than the abbreviation, bar, or traditional caret notations.</blockquote>
+<p>Everyone also thought this was true, but it was the <strong>compiler error</strong>, largely due to the fact that Accelerate is largely a C framework, meaning no such <em>Objective-C</em> method exists (though there is a <code>vImage_­Error vImage­Convolve_­ARGB­8888(...);</code>)! <a href="https://developer.apple.com/documentation/accelerate/1515923-vimageconvolve_argb8888?language=objc">Learn&nbsp;More&nbsp;→</a></p>
 
-<p>Spencer thought this was the error, but it was also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Option_key">Learn&nbsp;More&nbsp;→</a></p>
+<blockquote>3. A private Method on UIViewController, <code>attention­Class­Dump­User:­yes­Its­Us­Again:­although­Swizzling­And­Overriding­Private­Methods­Is­Fun:­it­Wasnt­Much­Fun­When­Your­App­Stopped­Working:­please­Refrain­From­Doing­So­In­The­Future­Okay­Thanks­Bye:</code> is actually a no-op, though is used by some third party libraries.</blockquote>
 
-<p>Which means that…</p>
+<p>Dan thought this was completely made up, but it was a <em>code completion</em> after all! <a href="https://github.com/marcoarment/BugshotKit/blob/bfa7fc24760ea9315702252b05a685108787dc4e/BugshotKit/BugshotKit.m#L219">Learn&nbsp;More&nbsp;→</a></p>
 
-<blockquote>1. Known as the key with the apple logo, the command key has been represented by the unicode character known as <code>PLACE OF INTEREST SIGN</code> since the Macintosh introduced in 1984, though the command key itself was present on the Apple III introduced in 1980, but it was represented by an open Apple logo instead.</blockquote>
+<p>Which leaves…</p>
 
-<p>is in fact the <strong>compiler error</strong>! <a href="https://en.wikipedia.org/wiki/Option_key">Learn&nbsp;More&nbsp;→</a></p>
+<blockquote>4. Related to CarPlay, <code>init­With­Enable­Fan:­enable­Air­Conditioner:­enable­Climate­Control:­enable­Auto­Mode:­air­Circulation­Mode:­fan­Speed­Index:­fan­Speed­Percentage:­relative­Fan­Speed­Setting:­temperature:­relative­Temperature­Setting:­climate­Zone:</code> is a public method with full online documentation, though now deprecated.</blockquote>
 
-</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/app/apple-store/id1448552588?pt=14724&ct=CodeCompletion1&mt=8">Huuungry</a>. <a href="https://apps.apple.com/app/apple-store/id1448552588?pt=14724&ct=CodeCompletion1&mt=8">Click here</a> or search for Huuungry on the iOS App Store today to give it a try.</p>
-                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/Dyfwl2UFWNY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>…which Ben doubted could actually be in iOS with this level of control, but it was indeed a <em>code completion</em>… <a href="https://developer.apple.com/documentation/sirikit/insetclimatesettingsincarintent/2102611-initwithenablefan?language=objc">Learn More&nbsp;→</a></p>
+
+</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://www.jonnybcodes.com">JohnnyB</a>'s Bon Voyage eCommerce App course. Visit <a href="http://bon-voyage.app/course">bon-voyage.app/course</a> and be sure to follow Bon Voyage's instructor <a href="https://twitter.com/jonnybcodes">@jonnybcodes</a> on Twitter to learn more and stay up to date with all his courses!</p>
+                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/PkFcd1BreG4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="subscribe">
                         <div class="title">Listen for free in your favorite podcast app:</div>
                         <div class="app">
@@ -122,16 +130,25 @@
                     <span>Tagged with: </span>
                     <ul class="tag-list">
                         <li>
-                            <a href="/tags/uicollectionview">UICollectionView</a>
+                            <a href="/tags/guest-episode">Guest Episode</a>
                         </li>
                         <li>
-                            <a href="/tags/ipad">iPad</a>
+                            <a href="/tags/interviews">Interviews</a>
                         </li>
                         <li>
-                            <a href="/tags/app-store">App Store</a>
+                            <a href="/tags/remote-work">Remote Work</a>
                         </li>
                         <li>
-                            <a href="/tags/unicode">Unicode</a>
+                            <a href="/tags/junior-development">Junior Development</a>
+                        </li>
+                        <li>
+                            <a href="/tags/getting-started">Getting Started</a>
+                        </li>
+                        <li>
+                            <a href="/tags/test-driven-development">Test Driven Development</a>
+                        </li>
+                        <li>
+                            <a href="/tags/objectivec">Objective-C</a>
                         </li>
                     </ul>
                 </div>

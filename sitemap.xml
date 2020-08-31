@@ -4,72 +4,78 @@
         <loc>https://codecompletion.io/articles</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
-        <lastmod>2020-08-28</lastmod>
+        <lastmod>2020-08-31</lastmod>
     </url>
     <url>
         <loc>https://codecompletion.io/articles/2020/08/compositional-layouts</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
-        <lastmod>2020-08-28</lastmod>
+        <lastmod>2020-08-31</lastmod>
     </url>
     <url>
         <loc>https://codecompletion.io/episodes</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
-        <lastmod>2020-08-28</lastmod>
+        <lastmod>2020-08-31</lastmod>
+    </url>
+    <url>
+        <loc>https://codecompletion.io/episodes/2020/ep-4</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <lastmod>2020-08-31</lastmod>
     </url>
     <url>
         <loc>https://codecompletion.io/episodes/2020/ep-3</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
-        <lastmod>2020-08-28</lastmod>
+        <lastmod>2020-08-31</lastmod>
     </url>
     <url>
         <loc>https://codecompletion.io/episodes/2020/ep-2</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
-        <lastmod>2020-08-28</lastmod>
+        <lastmod>2020-08-31</lastmod>
     </url>
     <url>
         <loc>https://codecompletion.io/episodes/2020/ep-1</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
-        <lastmod>2020-08-28</lastmod>
+        <lastmod>2020-08-31</lastmod>
     </url>
     <url>
         <loc>https://codecompletion.io/live</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
-        <lastmod>2020-08-29</lastmod>
+        <lastmod>2020-08-31</lastmod>
     </url>
     <url>
         <loc>https://codecompletion.io/live/2020/ep-4</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
-        <lastmod>2020-08-28</lastmod>
+        <lastmod>2020-08-31</lastmod>
     </url>
     <url>
         <loc>https://codecompletion.io/live/2020/ep-3</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
-        <lastmod>2020-08-28</lastmod>
+        <lastmod>2020-08-31</lastmod>
     </url>
     <url>
         <loc>https://codecompletion.io/live/2020/ep-2</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
-        <lastmod>2020-08-28</lastmod>
+        <lastmod>2020-08-31</lastmod>
     </url>
     <url>
         <loc>https://codecompletion.io/live/2020/ep-1</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
-        <lastmod>2020-08-28</lastmod>
+        <lastmod>2020-08-31</lastmod>
     </url>
     <url>
         <loc>https://codecompletion.io/podcast</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
-        <lastmod>2020-08-28</lastmod>
+        <lastmod>2020-08-31</lastmod>
     </url>
 </urlset>
