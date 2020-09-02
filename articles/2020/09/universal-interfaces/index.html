@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="og:site_name" content="CodeCompletion.io"/>
-        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-1"/>
-        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-1"/>
-        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-1"/>
-        <title>Episode 1: File, New, New Project… | CodeCompletion.io</title>
-        <meta name="twitter:title" content="Episode 1: File, New, New Project… | CodeCompletion.io"/>
-        <meta name="og:title" content="Episode 1: File, New, New Project… | CodeCompletion.io"/>
-        <meta name="description" content="We discuss how to layout your UI using compositional layouts and diffable data sources, different ways to bring an iPhone UI to the iPad, and ways Apple could make the App Store a better place for both developers and users."/>
-        <meta name="twitter:description" content="We discuss how to layout your UI using compositional layouts and diffable data sources, different ways to bring an iPhone UI to the iPad, and ways Apple could make the App Store a better place for both developers and users."/>
-        <meta name="og:description" content="We discuss how to layout your UI using compositional layouts and diffable data sources, different ways to bring an iPhone UI to the iPad, and ways Apple could make the App Store a better place for both developers and users."/>
+        <link rel="canonical" href="https://codecompletion.io/articles/2020/09/universal-interfaces"/>
+        <meta name="twitter:url" content="https://codecompletion.io/articles/2020/09/universal-interfaces"/>
+        <meta name="og:url" content="https://codecompletion.io/articles/2020/09/universal-interfaces"/>
+        <title>Implementing Universal Interfaces | CodeCompletion.io</title>
+        <meta name="twitter:title" content="Implementing Universal Interfaces | CodeCompletion.io"/>
+        <meta name="og:title" content="Implementing Universal Interfaces | CodeCompletion.io"/>
+        <meta name="description" content="We discuss different ways of bringing an iPhone UI to the iPad, and building interfaces for universal apps."/>
+        <meta name="twitter:description" content="We discuss different ways of bringing an iPhone UI to the iPad, and building interfaces for universal apps."/>
+        <meta name="og:description" content="We discuss different ways of bringing an iPhone UI to the iPad, and building interfaces for universal apps."/>
         <meta name="twitter:card" content="summary"/>
         <link rel="stylesheet" href="/styles.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -28,10 +28,10 @@
                             <a href="/podcast">Podcast</a>
                         </li>
                         <li>
-                            <a class="selected" href="/episodes">Episodes</a>
+                            <a href="/episodes">Episodes</a>
                         </li>
                         <li>
-                            <a href="/articles">Articles</a>
+                            <a class="selected" href="/articles">Articles</a>
                         </li>
                         <li>
                             <a href="https://twitter.com/CodeCompletion">Twitter</a>
@@ -46,49 +46,12 @@
         <div class="wrapper">
             <article>
                 <div class="content">
-                    <h1>Episode 1: File, New, New Project…</h1>
-                    <p class="metadata">// Episode 1 was originally recorded on Friday, August 7, 2020, and was released on Monday, August 10, 2020.
-                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Spencer Curtis and Ben Gohlke.
-                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+h53fLe7-?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>How to layout your UI using compositional layouts and diffable data sources.</li><li>Different ways to bring an iPhone UI to the iPad.</li><li>Ways Apple could make the App Store a better place for both developers and users.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>Without using a variable as a flag, how can you skip to the next iteration of an outer loop, from inside an inner loop?</blockquote><pre><code class="splashlineNumbers">1
-2
-3
-4
-5
-6
-7
-8
-</code><code><span class="splashkeyword">for</span> row <span class="splashkeyword">in</span> rows {
-    <span class="splashkeyword">for</span> column <span class="splashkeyword">in</span> columns {
-        <span class="splashkeyword">if</span> column.<span class="splashproperty">shouldSkipToNextRow</span> {
-            <span class="splashcomment">// how do you get to the next row?</span>
-        }
-    }
-    <span class="splashcall">finishUpRow</span>(row)
-}
-</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>Known as the key with the apple logo, the command key has been represented by the unicode character known as <code>PLACE OF INTEREST SIGN</code> since the Apple III.</li></ol><ol start="2"><li>Used on many systems that are very different from Macs, the control key on Mac OS differentiates itself from the competition by using the <code>UP ARROWHEAD</code> unicode character rather than the abbreviation, bar, or traditional caret notations.</li></ol><ol start="3"><li>Located between the control and command keys on the keyboard, the option key is unoriginally called <code>OPTION KEY</code> in the unicode specification, but was also known as the “closed apple key” on Apple II series computers.</li></ol><ol start="4"><li>Despite being used on some of the earliest computers, the shift modifier on Apple keyboards simply uses the <code>UPWARDS WHITE ARROW</code> character, an approximation of the standardized Level 2 Select key’s original symbol.</li></ol><details><summary>Compilation Results</summary><div class="details">
-
-<p>Ben went first, followed by Spencer. Let's check how they did!</p>
-
-<blockquote>4. Despite being used on some of the earliest computers, the shift modifier on Apple keyboards simply uses the <code>UPWARDS WHITE ARROW</code> character, an approximation of the standardized Level 2 Select key’s original symbol.</blockquote>
-
-<p>Everyone thought this was true, and it is indeed a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Shift_key">Learn&nbsp;More&nbsp;→</a></p>
-
-<blockquote>3. Located between the control and command keys on the keyboard, the option key is unoriginally called <code>OPTION KEY</code> in the unicode specification, but was also known as the “closed apple key” on Apple II series computers.</blockquote>
-
-<p>Spencer thought this was true, while Ben thought this was the error, but it was also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Control_key">Learn&nbsp;More&nbsp;→</a></p>
-
-<blockquote>2. Used on many systems that are very different from Macs, the control key on Mac OS differentiates itself from the competition by using the <code>UP ARROWHEAD</code> unicode character rather than the abbreviation, bar, or traditional caret notations.</blockquote>
-
-<p>Spencer thought this was the error, but it was also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Option_key">Learn&nbsp;More&nbsp;→</a></p>
-
-<p>Which means that…</p>
-
-<blockquote>1. Known as the key with the apple logo, the command key has been represented by the unicode character known as <code>PLACE OF INTEREST SIGN</code> since the Macintosh introduced in 1984, though the command key itself was present on the Apple III introduced in 1980, but it was represented by an open Apple logo instead.</blockquote>
-
-<p>is in fact the <strong>compiler error</strong>! <a href="https://en.wikipedia.org/wiki/Option_key">Learn&nbsp;More&nbsp;→</a></p>
-
-</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/app/apple-store/id1448552588?pt=14724&ct=CodeCompletion1&mt=8">Huuungry</a>. <a href="https://apps.apple.com/app/apple-store/id1448552588?pt=14724&ct=CodeCompletion1&mt=8">Click here</a> or search for Huuungry on the iOS App Store today to give it a try.</p>
-                    <h2>📺 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/Dyfwl2UFWNY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h1>Implementing Universal Interfaces</h1>
+                    <p class="metadata">// The contents of this article were originally presented by Spencer Curtis and discussed with Ben Gohlke and Dimitri Bouniol on 
+                        <a href="/episodes/2020/ep-1">Episode 1</a> of Code Completion.
+                        <br/>// Written on Wednesday, September 2, 2020 by Dimitri Bouniol.
+                    </p><p>With the addition of Catalyst last year in macOS Catalina, it can be tempting to want to click a checkbox to make an iPhone app available for the Mac, but it is first necessary to add support for various iPad layouts if you hope your app will behave nicely in a windowed environment. This can be a more difficult process to get right than many assume, as not every iPhone layout can expand to fill a much larger space without compromising the original design choices made for the smaller screen.</p><h2>📏 Using Trait Variations and Storyboards</h2><p>The method Apple recommends is to use trait variations within a storyboard to <em>vary</em> the user interface with a different set of layout rules, or <em>constraints</em>, depending on the size of the device being used. This system will adapt the position, size, and availability of various interface elements on the app's behalf, taking care of a variety of situations, from the smallest to the largest iPhones, to multitasking on the iPad.</p><p>For instance, for a given element such as a button on screen, it can be given the full width available on a device with a <em>compact size class</em> such as an iPhone, but would be given a smaller width and moved to the side on a device with a <em>regular size class</em>, such as an iPad. This allows a variety of constraints to be set of ahead of time for a variety of devices.</p><p>Unfortunately, using trait variations in a storyboard requires that interfaces at any size be fairly similar, which can lead to one extreme being non-ideal, or worse, to a compromised interface for all screen sizes. This leads to implementations that can become quite messy and difficult to maintain.</p><h2>🗂 Using Multiple Storyboards</h2><p>One solution that enables multiple interface layouts relatively easily is to use multiple storyboards, and choose a storyboard at launch depending on the user interface idiom, which lets the app know if it is running as an iPhone app, iPad app, or with Catalyst, a macOS app.</p><p>This is, however, not a new technique. Before storyboards became available in iOS 5, the recommendation was to have a separate interface, or <em>NIB</em>, per device type, and to switch to the corresponding interface on launch. The system would even make this automatic if you suffixed your iPad specific interface file with <code>~ipad.nib</code>, which would automatically be preferred when running on an iPad.</p><p>Unfortunately, this technique does not lend itself well to multitasking on the iPad. As an app is resized to the thinner presentations on either side of the iPad’s screen, it starts to resemble a vertically-stretched out iPhone, and can benefit from layout decisions that work better on an iPhone rather than an iPad. Unfortunately, to best take advantage of this change in layout when using multiple storyboards would be to re-build the entire interface from scratch, which is not ideal.</p><h2>📜 A Historical Note About NIBs</h2><p>A NIB, or <em>NeXT Interface Builder</em> document, is a format that encodes the position, size, attributes, and connections of various interface elements relative to one another, so that they can be loaded at runtime and connected to objects that the app is currently controlling. The format has undergone several changes since it was originally invented in the late 80s, but is ultimately still used in Storyboards to this day.</p><p>In a typical Model-View-Controller organization of an app, the NIB represents the portion that is displayed on screen, known as the <em>view</em>. In order to achieve re-usable code that could work for multiple user interfaces — for instance pertaining to different variations of an app, or even the same interface, but in different languages with different layout considerations — multiple NIBs would be created by the developer, but they would all be connected to the same managing object within the app, known as the <em>controller</em>.</p><p>Modern View Controllers on both iOS and macOS maintain this tradition, as their preferred way of being created, know as a <em>designated initializer</em>, reflects their preference for a localized NIB to connect to: <code>init(nibName:bundle:)</code>.</p><h2>🧮 Programmatic Layout</h2><p>Another approach that could work well is to lay all the views out programmatically. This approach tends to work best when the number of constraints within a storyboard climbs to an amount where making any changes or tweaks becomes burdensome, but comes with the downside that the developer no longer has a visual canvas to use when editing their interface.</p><p>In fact, sometimes this is a necessary approach, especially if your interface could benefit from additional flexibility that size classes do not account for. For instance, an iPad in both landscape and portrait is considered to be a <em>regular size class</em> device, no matter the orientation, but if you wanted to take advantage of the extra width when in landscape, you would be unable to do so using only a storyboard.</p><p>This solution is not too different from the declarative nature of SwiftUI. Essentially, in <code>viewWillLayout()</code> you are given the opportunity to position all views according to the current state of the view controller. You can go further and evaluate exactly how many pixels are available for your controls, and position things accordingly.</p><h2>🏗 Assembling Different Techniques</h2><p>Unfortunately, solutions that are entirely programmatic tend to be a nightmare when working with others, because without the visual reinforcement of where things are, along with the usual lack of well documented code, teammates may be intimidated to jump in and offer changes. A hybrid approach is encouraged, where individual groups of views could be laid out programmatically, but those groups are available as views configurable in a storyboard directly. Ultimately, such solutions rely on not only the app being well designed, but the code itself being architected and thoughtful as well.</p><p>Using <a href="/articles/2020/08/compositional-layouts">compositional data sources</a> offer an alternative solution, especially when the main UI is a collection of entries that should take advantage of as much space as they can use. This can even be a solution that is more cleanly represented as code, since a storyboard would only serve to obscure the properties being set on a single view behind different panels, while the code itself is not actually doing any layout work itself: the collection view is.</p>
+                    <h2>🎙 More From This Episode</h2><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+h53fLe7-?theme=dark" frameborder="0" scrolling="no"></iframe>
                     <div class="subscribe">
                         <div class="title">Listen for free in your favorite podcast app:</div>
                         <div class="app">
@@ -122,16 +85,28 @@
                     <span>Tagged with: </span>
                     <ul class="tag-list">
                         <li>
-                            <a href="/tags/uicollectionview">UICollectionView</a>
+                            <a href="/tags/podcast-topic">Podcast Topic</a>
                         </li>
                         <li>
-                            <a href="/tags/ipad">iPad</a>
+                            <a href="/tags/universal-apps">Universal Apps</a>
                         </li>
                         <li>
-                            <a href="/tags/app-store">App Store</a>
+                            <a href="/tags/ipados">iPadOS</a>
                         </li>
                         <li>
-                            <a href="/tags/unicode">Unicode</a>
+                            <a href="/tags/nib">NIB</a>
+                        </li>
+                        <li>
+                            <a href="/tags/xib">XIB</a>
+                        </li>
+                        <li>
+                            <a href="/tags/storyboards">Storyboards</a>
+                        </li>
+                        <li>
+                            <a href="/tags/catalyst">Catalyst</a>
+                        </li>
+                        <li>
+                            <a href="/tags/declarative-ui">Declarative UI</a>
                         </li>
                     </ul>
                 </div>
