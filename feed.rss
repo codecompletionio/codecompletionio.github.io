@@ -1,6 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content"><channel><title>CodeCompletion.io</title><description>We are a group of developers and educators specializing in Apple Platform development, here to try something new.
 
-New content coming out every Friday.</description><link>https://codecompletion.io</link><language>en</language><lastBuildDate>Fri, 11 Sep 2020 17:02:56 +0000</lastBuildDate><pubDate>Fri, 11 Sep 2020 17:02:56 +0000</pubDate><ttl>250</ttl><atom:link href="https://codecompletion.io/feed.rss" rel="self" type="application/rss+xml"/><item><guid isPermaLink="true">https://codecompletion.io/episodes/2020/ep-5</guid><title>Episode 5: Emacs Should Die a Fiery Death</title><description>We discuss when to rewrite your code or tackle technical dept, introduce the world to documentation driven development, and discuss why the lack of good documentation may be hurting juniors trying to get established.</description><link>https://codecompletion.io/episodes/2020/ep-5</link><pubDate>Tue, 8 Sep 2020 16:30:00 +0000</pubDate><content:encoded><![CDATA[<p>Welcome to Code Completion, Episode 5! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>When to rewrite a project from scratch, when to buckle down and conquer technical debt, and when to do a little something in between.</li><li>The importance of documenting code, and how the lack of documentation stifles newcomers from becoming established developers.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>Review the following code — what might the developer have overlooked?</blockquote><pre><code class="splashlineNumbers">1
+New content coming out every Friday.</description><link>https://codecompletion.io</link><language>en</language><lastBuildDate>Mon, 14 Sep 2020 16:39:20 +0000</lastBuildDate><pubDate>Mon, 14 Sep 2020 16:39:20 +0000</pubDate><ttl>250</ttl><atom:link href="https://codecompletion.io/feed.rss" rel="self" type="application/rss+xml"/><item><guid isPermaLink="true">https://codecompletion.io/episodes/2020/ep-6</guid><title>Episode 6: I Hate This Game</title><description>With special guests Josh Holtz and Tyler Hillsman, we discuss different App Store pricing models, and which would be the best fit for Josh's new app.</description><link>https://codecompletion.io/episodes/2020/ep-6</link><pubDate>Mon, 14 Sep 2020 16:30:00 +0000</pubDate><content:encoded><![CDATA[<p>Welcome to Code Completion, Episode 6! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show! This time, we are joined by special guests, Josh Holtz and Tyler Hillsman! Be sure to follow them on Twitter at <a href="https://twitter.com/joshdholtz">@joshdholtz</a> and <a href="https://twitter.com/thillsman">@thillsman</a>.</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>Different App Store Pricing models.</li><li>The benefits of paid up front with the ever-elusive charts.</li><li>Subscription vs In App Purchase for unlocking functionality in an app.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>Review the following code — what might the developer have overlooked?</blockquote><pre><code class="splashlineNumbers">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</code><code><span class="splashkeyword">class</span> View {
+    <span class="splashkeyword">private(set) var</span> parent: <span class="splashtype">View</span>?
+    <span class="splashkeyword">private(set) var</span> children: [<span class="splashtype">View</span>] = []
+    
+    <span class="splashkeyword">func</span> removeFromParentView() {
+        <span class="splashkeyword">guard let</span> parent = parent <span class="splashkeyword">else</span> { <span class="splashkeyword">return</span> }
+        parent.<span class="splashproperty">children</span>.<span class="splashcall">removeAll</span> { $0 === <span class="splashkeyword">self</span> }
+    }
+    
+    <span class="splashkeyword">func</span> add(<span class="splashkeyword">_</span> child: <span class="splashtype">View</span>) {
+        <span class="splashkeyword">guard</span> child != <span class="splashkeyword">self else</span> { <span class="splashcall">preconditionFailure</span>() }
+        child.<span class="splashcall">removeFromParentView</span>()
+        children.<span class="splashcall">append</span>(child)
+        child.<span class="splashproperty">parent</span> = <span class="splashkeyword">self</span>
+    }
+}
+</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>Streaming game services may offer a catalog app on the App Store to help users sign up for the service and find the games on the App Store, provided that the app adheres to all guidelines, including offering users the option to pay for a subscription with in-app purchase and use Sign in with Apple.</li></ol><ol start="2"><li>Apps in the Kids category must not include links out of the app, purchasing opportunities, or other distractions to kids unless guarded behind a parental gate.</li></ol><ol start="3"><li>Screenshots should not include text and image overlays other than to illustrate the app in use, and they must not use any Apple devices or products for marketing purposes.</li></ol><ol start="4"><li>If your app displays Activity rings, they should not visualize Move, Exercise, or Stand data in a way that resembles the Activity control.</li></ol><details><summary>Compilation Results</summary><div class="details">
+
+<p>This time, Josh and Tyler wend first, followed by Fernando and Ben. Let's see how they did!</p>
+
+<blockquote>3. Screenshots should not include text and image overlays other than to illustrate the app in use, and they must not use any Apple devices or products for marketing purposes.</blockquote>
+
+<p>Everyone thought this was true, and it really should be true! Unfortunately for them though, this one was the <strong>compiler error</strong>! The actual text reads:</p>
+
+<p><strong>2.3.3</strong> Screenshots should show the app in use, and not merely the title art, log-in page, or splash screen. They may also include text and image overlays (e.g. to demonstrate input mechanisms, such as an animated touch point or Apple Pencil) and show extended functionality on device, such as Touch Bar. <a href="https://developer.apple.com/app-store/review/guidelines/#2.3.3">Learn&nbsp;More&nbsp;→</a></p>
+
+<blockquote>4. If your app displays Activity rings, they should not visualize Move, Exercise, or Stand data in a way that resembles the Activity control.</blockquote>
+
+<p>Tyler and Ben had sincere doubts about this one and thought it was the compiler error, but it was a <em>code completion</em> after all! <a href="https://developer.apple.com/app-store/review/guidelines/#5.2.5">Learn&nbsp;More&nbsp;→</a></p>
+
+<blockquote>2. Apps in the Kids category must not include links out of the app, purchasing opportunities, or other distractions to kids unless guarded behind a parental gate.</blockquote>
+
+<p>Although Josh was leaning on number 3 originally, this one was chosen instead, but it was also a <em>code completion</em>! <a href="https://developer.apple.com/app-store/review/guidelines/#1.3">Learn&nbsp;More&nbsp;→</a> <a href="https://developer.apple.com/app-store/kids-apps/">More&nbsp;→</a></p>
+
+<p>Which leaves…</p>
+
+<blockquote>1.  Streaming game services may offer a catalog app on the App Store to help users sign up for the service and find the games on the App Store, provided that the app adheres to all guidelines, including offering users the option to pay for a subscription with in-app purchase and use Sign in with Apple.</blockquote>
+
+<p>…which Fernando highly doubted, but it was also a <em>code completion</em>, and one introduced the morning of the day we all recorded on! <a href="https://developer.apple.com/app-store/review/guidelines/#4.9.2">Learn&nbsp;More&nbsp;→</a> <a href="https://developer.apple.com/news/?id=xqk627qu">More&nbsp;→</a></p>
+
+</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by Fernando and his new book: <a href="https://gumroad.com/l/QutHw">From Junior to Senior: Practical iOS</a>. Go to <a href="https://twitter.com/fromjrtosr">https://twitter.com/fromjrtosr</a> today to learn more!</p>]]></content:encoded></item><item><guid isPermaLink="true">https://codecompletion.io/episodes/2020/ep-5</guid><title>Episode 5: Emacs Should Die a Fiery Death</title><description>We discuss when to rewrite your code or tackle technical dept, introduce the world to documentation driven development, and discuss why the lack of good documentation may be hurting juniors trying to get established.</description><link>https://codecompletion.io/episodes/2020/ep-5</link><pubDate>Tue, 8 Sep 2020 16:30:00 +0000</pubDate><content:encoded><![CDATA[<p>Welcome to Code Completion, Episode 5! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>When to rewrite a project from scratch, when to buckle down and conquer technical debt, and when to do a little something in between.</li><li>The importance of documenting code, and how the lack of documentation stifles newcomers from becoming established developers.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>Review the following code — what might the developer have overlooked?</blockquote><pre><code class="splashlineNumbers">1
 2
 3
 4
@@ -42,7 +98,7 @@ New content coming out every Friday.</description><link>https://codecompletion.i
 }
 </code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>Although the same can be done using modifier and arrow keys, the text cursor can be quickly moved to the beginning and to the end of a document by using <code>⌃A</code> to go to the beginning, and <code>⌃Z</code> to go to the end.</li></ol><ol start="2"><li>You may know of the <code>⌘⌫</code> command to delete the entire line to the left of the text cursor, but <code>⌃K</code> can be used to delete the line to the right of the text cursor.</li></ol><ol start="3"><li>Available as an alternate clipboard, <code>⌃K</code> and <code>⌃Y</code> represent the kill and yank operations that let you cut and copy text without overriding your main clipboard. The clipboard they use is called the kill ring.</li></ol><ol start="4"><li><code>⌃T</code> is a useful command for transposing two letters that were typed out of order, by flipping the characters on each side of the text cursor.</li></ol><details><summary>Compilation Results</summary><div class="details">
 
-<p>This time, Fernando wend first, followed by Spencer and Ben. Let's see how they did!</p>
+<p>This time, Fernando went first, followed by Spencer and Ben. Let's see how they did!</p>
 
 <blockquote>4. <code>⌃T</code> is a useful command for transposing two letters that were typed out of order, by flipping the characters on each side of the text cursor.</blockquote>
 
