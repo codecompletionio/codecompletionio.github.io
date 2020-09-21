@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="og:site_name" content="CodeCompletion.io"/>
-        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-1"/>
-        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-1"/>
-        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-1"/>
-        <title>Episode 1: File, New, New Project… | CodeCompletion.io</title>
-        <meta name="twitter:title" content="Episode 1: File, New, New Project… | CodeCompletion.io"/>
-        <meta name="og:title" content="Episode 1: File, New, New Project… | CodeCompletion.io"/>
-        <meta name="description" content="We discuss how to layout your UI using compositional layouts and diffable data sources, different ways to bring an iPhone UI to the iPad, and ways Apple could make the App Store a better place for both developers and users."/>
-        <meta name="twitter:description" content="We discuss how to layout your UI using compositional layouts and diffable data sources, different ways to bring an iPhone UI to the iPad, and ways Apple could make the App Store a better place for both developers and users."/>
-        <meta name="og:description" content="We discuss how to layout your UI using compositional layouts and diffable data sources, different ways to bring an iPhone UI to the iPad, and ways Apple could make the App Store a better place for both developers and users."/>
+        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-7"/>
+        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-7"/>
+        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-7"/>
+        <title>Episode 7: Code Completion SE | CodeCompletion.io</title>
+        <meta name="twitter:title" content="Episode 7: Code Completion SE | CodeCompletion.io"/>
+        <meta name="og:title" content="Episode 7: Code Completion SE | CodeCompletion.io"/>
+        <meta name="description" content="We discuss Apple's “Time Flies” September Event, and what it means for developers."/>
+        <meta name="twitter:description" content="We discuss Apple's “Time Flies” September Event, and what it means for developers."/>
+        <meta name="og:description" content="We discuss Apple's “Time Flies” September Event, and what it means for developers."/>
         <meta name="twitter:card" content="summary"/>
         <link rel="stylesheet" href="/styles.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,10 +46,10 @@
         <div class="wrapper">
             <article>
                 <div class="content">
-                    <h1>Episode 1: File, New, New Project…</h1>
-                    <p class="metadata">// Episode 1 was originally recorded on Friday, August 7, 2020, and was released on Monday, August 10, 2020.
-                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Spencer Curtis and Ben Gohlke.
-                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+h53fLe7-?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>How to layout your UI using compositional layouts and diffable data sources.</li><li>Different ways to bring an iPhone UI to the iPad.</li><li>Ways Apple could make the App Store a better place for both developers and users.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>Without using a variable as a flag, how can you skip to the next iteration of an outer loop, from inside an inner loop?</blockquote><pre><code class="splashlineNumbers">1
+                    <h1>Episode 7: Code Completion SE</h1>
+                    <p class="metadata">// Episode 7 was originally recorded on Friday, September 18, 2020, and was released on Monday, September 21, 2020.
+                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Johnny Hicks, Ben Gohlke, and Fernando Olivares.
+                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+fmQLEwWk?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 7! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>iOS 14's rushed release.</li><li><a href="https://www.whatsnewinswift.com/?from=5.2&to=5.3">New Features in Swift 5.3</a>.</li><li>The A14 making it's debut on iPad before iPhone.</li><li>The return of Touch ID on the iPad's top button.</li><li>The new Apple One subscription service.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>The code below will output <code>Hello, Ben!</code>. How would you change line 3 so it outputs <code>Hello, Dimitri!</code> instead?</blockquote><pre><code class="splashlineNumbers">1
 2
 3
 4
@@ -57,38 +57,44 @@
 6
 7
 8
-</code><code><span class="splashkeyword">for</span> row <span class="splashkeyword">in</span> rows {
-    <span class="splashkeyword">for</span> column <span class="splashkeyword">in</span> columns {
-        <span class="splashkeyword">if</span> column.<span class="splashproperty">shouldSkipToNextRow</span> {
-            <span class="splashcomment">// how do you get to the next row?</span>
-        }
-    }
-    <span class="splashcall">finishUpRow</span>(row)
+9
+10
+11
+</code><code><span class="splashkeyword">var</span> name = <span class="splashstring">"Dimitri"</span>
+
+<span class="splashkeyword">var</span> introduce = {
+    <span class="splashcomment">// What change can you make to the above line
+    // to output "Dimitri" rather than "Ben"?</span>
+    <span class="splashcall">print</span>(<span class="splashstring">"Hello,</span> \(name)<span class="splashstring">!"</span>)
 }
-</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>Known as the key with the apple logo, the command key has been represented by the unicode character known as <code>PLACE OF INTEREST SIGN</code> since the Apple III.</li></ol><ol start="2"><li>Used on many systems that are very different from Macs, the control key on Mac OS differentiates itself from the competition by using the <code>UP ARROWHEAD</code> unicode character rather than the abbreviation, bar, or traditional caret notations.</li></ol><ol start="3"><li>Located between the control and command keys on the keyboard, the option key is unoriginally called <code>OPTION KEY</code> in the unicode specification, but was also known as the “closed apple key” on Apple II series computers.</li></ol><ol start="4"><li>Despite being used on some of the earliest computers, the shift modifier on Apple keyboards simply uses the <code>UPWARDS WHITE ARROW</code> character, an approximation of the standardized Level 2 Select key’s original symbol.</li></ol><details><summary>Compilation Results</summary><div class="details">
 
-<p>Ben went first, followed by Spencer. Let's check how they did!</p>
+name = <span class="splashstring">"Ben"</span>
 
-<blockquote>4. Despite being used on some of the earliest computers, the shift modifier on Apple keyboards simply uses the <code>UPWARDS WHITE ARROW</code> character, an approximation of the standardized Level 2 Select key’s original symbol.</blockquote>
+<span class="splashcall">introduce</span>()
+</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>Introduced in 1987, the Macintosh SE was a Special Edition of the 128k Mac that was the first Mac to offer a color display as an option, although limited to 8 bits.</li></ol><ol start="2"><li>Introduced 2 years later as a processor update of its predecessor, the Macintosh SE/30 was unofficially expandable to a whopping 128 MB of RAM, an amount that was greater than many future models, and its board and front panel were available as official upgrades for the original Macintosh SE.</li></ol><ol start="3"><li>A surprise to many, the SE naming made a comeback in 2016 as the iPhone SE, a Special Edition of iPhone 6S that used the iPhone 5S case, and would mark a new tier of low-cost iPhones with up-to-date components.</li></ol><ol start="4"><li>Available today, the Apple Watch SE follows in the footsteps of the iPhone SE, but rather than use the internals of the flagship Series 6, it is instead closer to a limited variant of the Series 5, with an S5 package on a chip, but without an always-on display and electrocardiogram sensor.</li></ol><details><summary>Compilation Results</summary><div class="details">
 
-<p>Everyone thought this was true, and it is indeed a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Shift_key">Learn&nbsp;More&nbsp;→</a></p>
+<p>This time, Johnny went first, followed by Fernando and Ben. Let's see how they did!</p>
 
-<blockquote>3. Located between the control and command keys on the keyboard, the option key is unoriginally called <code>OPTION KEY</code> in the unicode specification, but was also known as the “closed apple key” on Apple II series computers.</blockquote>
+<blockquote>4. Available today, the Apple Watch SE follows in the footsteps of the iPhone SE, but rather than use the internals of the flagship Series 6, it is instead closer to a limited variant of the Series 5, with an S5 package on a chip, but without an always-on display and electrocardiogram sensor.</blockquote>
 
-<p>Spencer thought this was true, while Ben thought this was the error, but it was also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Control_key">Learn&nbsp;More&nbsp;→</a></p>
+<p>Everyone thought this was true, and given the timing, it would be surprising if they didn't, making this one a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Apple_Watch_SE">Learn&nbsp;More&nbsp;→</a></p>
 
-<blockquote>2. Used on many systems that are very different from Macs, the control key on Mac OS differentiates itself from the competition by using the <code>UP ARROWHEAD</code> unicode character rather than the abbreviation, bar, or traditional caret notations.</blockquote>
+<blockquote>3. A surprise to many, the SE naming made a comeback in 2016 as the iPhone SE, a Special Edition of iPhone 6S that used the iPhone 5S case, and would mark a new tier of low-cost iPhones with up-to-date components.</blockquote>
 
-<p>Spencer thought this was the error, but it was also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Option_key">Learn&nbsp;More&nbsp;→</a></p>
+<p>Fernando wasn't so sure about this one and detected some code smell, but it was also a <em>code completion</em> after all! <a href="https://en.wikipedia.org/wiki/IPhone_SE_(1st_generation)">Learn&nbsp;More&nbsp;→</a></p>
 
-<p>Which means that…</p>
+<blockquote>2. Introduced 2 years later as a processor update of its predecessor, the Macintosh SE/30 was unofficially expandable to a whopping 128 MB of RAM, an amount that was greater than many future models, and its board and front panel were available as official upgrades for the original Macintosh SE.</blockquote>
 
-<blockquote>1. Known as the key with the apple logo, the command key has been represented by the unicode character known as <code>PLACE OF INTEREST SIGN</code> since the Macintosh introduced in 1984, though the command key itself was present on the Apple III introduced in 1980, but it was represented by an open Apple logo instead.</blockquote>
+<p>Johnny wasn't too sure about the first two, but picked this one instead, which was unfortunate since it was also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Macintosh_SE/30">Learn&nbsp;More&nbsp;→</a></p>
 
-<p>is in fact the <strong>compiler error</strong>! <a href="https://en.wikipedia.org/wiki/Option_key">Learn&nbsp;More&nbsp;→</a></p>
+<p>Which leaves…</p>
 
-</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/app/apple-store/id1448552588?pt=14724&ct=CodeCompletion1&mt=8">Huuungry</a>. <a href="https://apps.apple.com/app/apple-store/id1448552588?pt=14724&ct=CodeCompletion1&mt=8">Click here</a> or search for Huuungry on the iOS App Store today to give it a try.</p>
-                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/Dyfwl2UFWNY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<blockquote>1. Introduced in 1987, the Macintosh SE was a Special Edition of the 128k Mac that was the first Mac to offer a color display as an option, although limited to 8 bits.</blockquote>
+
+<p>…which Ben could not believe, since it was the <strong>compiler error</strong>! Although color displays were available for some earlier Apple computers, they would not make it to the Macintosh line for a few more years due to memory and processing requirements. Not only that, “SE” did not stand for “Special Edition”, but “System Expansion”! <a href="https://developer.apple.com/app-store/review/guidelines/#4.9.2">Learn&nbsp;More&nbsp;→</a></p>
+
+</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/app/apple-store/id1525104124?mt=12">Super Easy Timer</a>! Search for <a href="https://apps.apple.com/app/apple-store/id1525104124?mt=12">Super Easy Timer</a> on the Mac App Store today to give it a try!</p>
+                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/R-1X6KT6qjY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="subscribe">
                         <div class="title">Listen for free in your favorite podcast app:</div>
                         <div class="app">
@@ -122,16 +128,28 @@
                     <span>Tagged with: </span>
                     <ul class="tag-list">
                         <li>
-                            <a href="/tags/uicollectionview">UICollectionView</a>
+                            <a href="/tags/apple-event">Apple Event</a>
+                        </li>
+                        <li>
+                            <a href="/tags/a14">A14</a>
+                        </li>
+                        <li>
+                            <a href="/tags/ios-14">iOS 14</a>
+                        </li>
+                        <li>
+                            <a href="/tags/swift">Swift</a>
+                        </li>
+                        <li>
+                            <a href="/tags/touch-id">Touch ID</a>
+                        </li>
+                        <li>
+                            <a href="/tags/apple-one">Apple One</a>
                         </li>
                         <li>
                             <a href="/tags/ipad">iPad</a>
                         </li>
                         <li>
-                            <a href="/tags/app-store">App Store</a>
-                        </li>
-                        <li>
-                            <a href="/tags/unicode">Unicode</a>
+                            <a href="/tags/apple-watch">Apple Watch</a>
                         </li>
                     </ul>
                 </div>
