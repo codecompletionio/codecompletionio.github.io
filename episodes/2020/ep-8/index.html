@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="og:site_name" content="CodeCompletion.io"/>
-        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-7"/>
-        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-7"/>
-        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-7"/>
-        <title>Episode 7: Code Completion SE | CodeCompletion.io</title>
-        <meta name="twitter:title" content="Episode 7: Code Completion SE | CodeCompletion.io"/>
-        <meta name="og:title" content="Episode 7: Code Completion SE | CodeCompletion.io"/>
-        <meta name="description" content="We discuss Apple's “Time Flies” September Event, and what it means for developers."/>
-        <meta name="twitter:description" content="We discuss Apple's “Time Flies” September Event, and what it means for developers."/>
-        <meta name="og:description" content="We discuss Apple's “Time Flies” September Event, and what it means for developers."/>
+        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-8"/>
+        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-8"/>
+        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-8"/>
+        <title>Episode 8: Is Two Wins a Streak? | CodeCompletion.io</title>
+        <meta name="twitter:title" content="Episode 8: Is Two Wins a Streak? | CodeCompletion.io"/>
+        <meta name="og:title" content="Episode 8: Is Two Wins a Streak? | CodeCompletion.io"/>
+        <meta name="description" content="We discuss how the App Store, app review, and marketing your app has changes over the years."/>
+        <meta name="twitter:description" content="We discuss how the App Store, app review, and marketing your app has changes over the years."/>
+        <meta name="og:description" content="We discuss how the App Store, app review, and marketing your app has changes over the years."/>
         <meta name="twitter:card" content="summary"/>
         <link rel="stylesheet" href="/styles.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,55 +46,43 @@
         <div class="wrapper">
             <article>
                 <div class="content">
-                    <h1>Episode 7: Code Completion SE</h1>
-                    <p class="metadata">// Episode 7 was originally recorded on Friday, September 18, 2020, and was released on Monday, September 21, 2020.
-                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Johnny Hicks, Ben Gohlke, and Fernando Olivares.
-                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+fmQLEwWk?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 7! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>iOS 14's rushed release.</li><li><a href="https://www.whatsnewinswift.com/?from=5.2&to=5.3">New Features in Swift 5.3</a>.</li><li>The A14 making it's debut on iPad before iPhone.</li><li>The return of Touch ID on the iPad's top button.</li><li>The new Apple One subscription service.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>The code below will output <code>Hello, Ben!</code>. How would you change line 3 so it outputs <code>Hello, Dimitri!</code> instead?</blockquote><pre><code class="splashlineNumbers">1
+                    <h1>Episode 8: Is Two Wins a Streak?</h1>
+                    <p class="metadata">// Episode 8 was originally recorded on Friday, September 25, 2020, and was released on Monday, September 28, 2020.
+                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Spencer Curtis and Ben Gohlke.
+                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+NKYuDFiM?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 8! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>What it’s like launching an app in 2020 compared to 2008.</li><li>How the process of app review has changed.</li><li>How developers are more on the hook than ever to provide their own marketing as App Store features don’t weigh as heavily as they did in the past.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>What's the technical limitation that prevents line 3? Why is line 4 allowed?</blockquote><pre><code class="splashlineNumbers">1
 2
 3
 4
 5
-6
-7
-8
-9
-10
-11
-</code><code><span class="splashkeyword">var</span> name = <span class="splashstring">"Dimitri"</span>
-
-<span class="splashkeyword">var</span> introduce = {
-    <span class="splashcomment">// What change can you make to the above line
-    // to output "Dimitri" rather than "Ben"?</span>
-    <span class="splashcall">print</span>(<span class="splashstring">"Hello,</span> \(name)<span class="splashstring">!"</span>)
+</code><code><span class="splashkeyword">struct</span> Folder {
+    <span class="splashkeyword">var</span> name: <span class="splashtype">String</span>
+    <span class="splashkeyword">var</span> parent: <span class="splashtype">Folder</span>? <span class="splashcomment">// What technical limitation prevents this?</span>
+    <span class="splashkeyword">var</span> children: [<span class="splashtype">Folder</span>] <span class="splashcomment">// And why is this ok?</span>
 }
+</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>Early versions of iPhone OS were limited to a black home screen background, but iOS 3.2 added the capability to finally change it.</li></ol><ol start="2"><li>iOS 4 brought emoji support to the iPhone and iPad for the first time via a built-in keyboard.</li></ol><ol start="3"><li>Although available since the very beginning, iPhone OS 2 brought a scientific calculator to the base feature set when the device was in landscape.</li></ol><ol start="4"><li>Notification Center finally made its debut in iOS 5, allowing users to manage notifications.</li></ol><details><summary>Compilation Results</summary><div class="details">
 
-name = <span class="splashstring">"Ben"</span>
+<p>This time, Ben went first, followed by Spencer. Let's see how they did!</p>
 
-<span class="splashcall">introduce</span>()
-</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>Introduced in 1987, the Macintosh SE was a Special Edition of the 128k Mac that was the first Mac to offer a color display as an option, although limited to 8 bits.</li></ol><ol start="2"><li>Introduced 2 years later as a processor update of its predecessor, the Macintosh SE/30 was unofficially expandable to a whopping 128 MB of RAM, an amount that was greater than many future models, and its board and front panel were available as official upgrades for the original Macintosh SE.</li></ol><ol start="3"><li>A surprise to many, the SE naming made a comeback in 2016 as the iPhone SE, a Special Edition of iPhone 6S that used the iPhone 5S case, and would mark a new tier of low-cost iPhones with up-to-date components.</li></ol><ol start="4"><li>Available today, the Apple Watch SE follows in the footsteps of the iPhone SE, but rather than use the internals of the flagship Series 6, it is instead closer to a limited variant of the Series 5, with an S5 package on a chip, but without an always-on display and electrocardiogram sensor.</li></ol><details><summary>Compilation Results</summary><div class="details">
+<blockquote>3. Although available since the very beginning, iPhone OS 2 brought a scientific calculator to the base feature set when the device was in landscape.</blockquote>
 
-<p>This time, Johnny went first, followed by Fernando and Ben. Let's see how they did!</p>
+<p>Everyone thought this was true, and it would be odd if they didn't, since this is a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/IPhone_OS_2">Learn&nbsp;More&nbsp;→</a></p>
 
-<blockquote>4. Available today, the Apple Watch SE follows in the footsteps of the iPhone SE, but rather than use the internals of the flagship Series 6, it is instead closer to a limited variant of the Series 5, with an S5 package on a chip, but without an always-on display and electrocardiogram sensor.</blockquote>
+<blockquote>4. Notification Center finally made its debut in iOS 5, allowing users to manage notifications.</blockquote>
 
-<p>Everyone thought this was true, and given the timing, it would be surprising if they didn't, making this one a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Apple_Watch_SE">Learn&nbsp;More&nbsp;→</a></p>
+<p>Everyone was also in agreement here, also making this a <em>code completion</em> after all! <a href="https://en.wikipedia.org/wiki/IOS_5">Learn&nbsp;More&nbsp;→</a></p>
 
-<blockquote>3. A surprise to many, the SE naming made a comeback in 2016 as the iPhone SE, a Special Edition of iPhone 6S that used the iPhone 5S case, and would mark a new tier of low-cost iPhones with up-to-date components.</blockquote>
+<blockquote>1. Early versions of iPhone OS were limited to a black home screen background, but iOS 3.2 added the capability to finally change it.</blockquote>
 
-<p>Fernando wasn't so sure about this one and detected some code smell, but it was also a <em>code completion</em> after all! <a href="https://en.wikipedia.org/wiki/IPhone_SE_(1st_generation)">Learn&nbsp;More&nbsp;→</a></p>
-
-<blockquote>2. Introduced 2 years later as a processor update of its predecessor, the Macintosh SE/30 was unofficially expandable to a whopping 128 MB of RAM, an amount that was greater than many future models, and its board and front panel were available as official upgrades for the original Macintosh SE.</blockquote>
-
-<p>Johnny wasn't too sure about the first two, but picked this one instead, which was unfortunate since it was also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Macintosh_SE/30">Learn&nbsp;More&nbsp;→</a></p>
+<p>Despite having an iPod touch stuck on this version, Spencer wasn't too sure, which was unfortunate since it was also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/IOS_version_history#iPhone_OS_3">Learn&nbsp;More&nbsp;→</a></p>
 
 <p>Which leaves…</p>
 
-<blockquote>1. Introduced in 1987, the Macintosh SE was a Special Edition of the 128k Mac that was the first Mac to offer a color display as an option, although limited to 8 bits.</blockquote>
+<blockquote>2. iOS 4 brought emoji support to the iPhone and iPad for the first time via a built-in keyboard.</blockquote>
 
-<p>…which Ben could not believe, since it was the <strong>compiler error</strong>! Although color displays were available for some earlier Apple computers, they would not make it to the Macintosh line for a few more years due to memory and processing requirements. Not only that, “SE” did not stand for “Special Edition”, but “System Expansion”! <a href="https://en.wikipedia.org/wiki/Macintosh_SE">Learn&nbsp;More&nbsp;→</a></p>
+<p>…which Ben once again had severe doubts with, since it was the <strong>compiler error</strong>! Although emoji would become a widely used feature in iOS 5, they could be enabled via sneaky apps in iOS 4, and were actually available in Japan as early as iPhone OS 2.2! <a href="https://emojipedia.org/apple/iphone-os-2.2/">Learn&nbsp;More&nbsp;→</a></p>
 
-</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/app/apple-store/id1525104124?mt=12">Super Easy Timer</a>! Search for <a href="https://apps.apple.com/app/apple-store/id1525104124?mt=12">Super Easy Timer</a> on the Mac App Store today to give it a try!</p>
-                    <h2>📺 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/R-1X6KT6qjY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by Fernando and his new book: <a href="https://gumroad.com/l/QutHw">From Junior to Senior: Practical iOS Style Guide</a>. Go to <a href="https://twitter.com/fromjrtosr">https://twitter.com/fromjrtosr</a> today to learn more!</p>
+                    <h2>📺 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/zNuIibE1xE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="subscribe">
                         <div class="title">Listen for free in your favorite podcast app:</div>
                         <div class="app">
@@ -128,28 +116,22 @@ name = <span class="splashstring">"Ben"</span>
                     <span>Tagged with: </span>
                     <ul class="tag-list">
                         <li>
-                            <a href="/tags/apple-event">Apple Event</a>
+                            <a href="/tags/app-store">App Store</a>
                         </li>
                         <li>
-                            <a href="/tags/a14">A14</a>
+                            <a href="/tags/app-review">App Review</a>
                         </li>
                         <li>
-                            <a href="/tags/ios-14">iOS 14</a>
+                            <a href="/tags/marketing">Marketing</a>
                         </li>
                         <li>
-                            <a href="/tags/swift">Swift</a>
+                            <a href="/tags/ios">iOS</a>
                         </li>
                         <li>
-                            <a href="/tags/touch-id">Touch ID</a>
+                            <a href="/tags/iphone-os">iPhone OS</a>
                         </li>
                         <li>
-                            <a href="/tags/apple-one">Apple One</a>
-                        </li>
-                        <li>
-                            <a href="/tags/ipad">iPad</a>
-                        </li>
-                        <li>
-                            <a href="/tags/apple-watch">Apple Watch</a>
+                            <a href="/tags/emoji">Emoji</a>
                         </li>
                     </ul>
                 </div>
