@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="og:site_name" content="CodeCompletion.io"/>
-        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-2"/>
-        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-2"/>
-        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-2"/>
-        <title>Episode 2: Available in Human Sizes | CodeCompletion.io</title>
-        <meta name="twitter:title" content="Episode 2: Available in Human Sizes | CodeCompletion.io"/>
-        <meta name="og:title" content="Episode 2: Available in Human Sizes | CodeCompletion.io"/>
-        <meta name="description" content="We discuss the benefits of finding your niche and specializing when looking for new opportunities, and what would happen if we considered the App Store to be simply a provider, much like an ISP."/>
-        <meta name="twitter:description" content="We discuss the benefits of finding your niche and specializing when looking for new opportunities, and what would happen if we considered the App Store to be simply a provider, much like an ISP."/>
-        <meta name="og:description" content="We discuss the benefits of finding your niche and specializing when looking for new opportunities, and what would happen if we considered the App Store to be simply a provider, much like an ISP."/>
+        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-9"/>
+        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-9"/>
+        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-9"/>
+        <title>Episode 9: Just Enough Research | CodeCompletion.io</title>
+        <meta name="twitter:title" content="Episode 9: Just Enough Research | CodeCompletion.io"/>
+        <meta name="og:title" content="Episode 9: Just Enough Research | CodeCompletion.io"/>
+        <meta name="description" content="We discuss A14 performance leaks, Accessibility, and who to ask to test your apps."/>
+        <meta name="twitter:description" content="We discuss A14 performance leaks, Accessibility, and who to ask to test your apps."/>
+        <meta name="og:description" content="We discuss A14 performance leaks, Accessibility, and who to ask to test your apps."/>
         <meta name="twitter:card" content="summary"/>
         <link rel="stylesheet" href="/styles.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,47 +46,53 @@
         <div class="wrapper">
             <article>
                 <div class="content">
-                    <h1>Episode 2: Available in Human Sizes</h1>
-                    <p class="metadata">// Episode 2 was originally recorded on Friday, August 14, 2020, and was released on Monday, August 17, 2020.
-                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Ben Gohlke, Fernando Olivares, and Johnny Hicks.
-                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+FBUJ2Fz2?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 2! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>Finding your niche and the benefits in specializing when looking for new opportunities.</li><li>How beneficial would it be to consider the App Store as simply a provider, much like an ISP.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>Can you explain what is wrong with the following code, how it can break, and show how to fix it?</blockquote><pre><code class="splashlineNumbers">1
+                    <h1>Episode 9: Just Enough Research</h1>
+                    <p class="metadata">// Episode 9 was originally recorded on Saturday, October 3, 2020, and was released on Monday, October 5, 2020.
+                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Ben Gohlke and Spencer Curtis.
+                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+2ZdkAH0t?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 8! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>New A14 performance leaks.</li><li>Integrating Accessibility in your apps.</li><li>Testing your apps with real users.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>What are the changes you could make to the code below so that we can have a <code>ProcessingCoordinator.Error</code> nested Error type?</blockquote><pre><code class="splashlineNumbers">1
 2
 3
 4
 5
 6
 7
-</code><code><span class="splashkeyword">struct</span> Person {
-    <span class="splashkeyword">var</span> name: <span class="splashtype">String</span>
-    <span class="splashkeyword">var</span> age: <span class="splashtype">Double</span>
+8
+9
+10
+</code><code><span class="splashkeyword">struct</span> ProcessingCoordinator {
+    <span class="splashcomment">// ...</span>
 }
 
-<span class="splashkeyword">let</span> person = <span class="splashcall">askForPerson</span>()
-<span class="splashtype">NSLog</span>(<span class="splashstring">"</span>\(person.<span class="splashproperty">name</span>) <span class="splashstring">is %.2f years old today!"</span>, person.<span class="splashproperty">age</span>)
-</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>A key player in pioneering the digital publishing space, Apple made several printer models in 80s and 90s such as the popular ImageWriter and LaserWriter, but they also made the Apple 410 Color Plotter, a printer that used a stylus along with a selection of inks to literally draw shapes and text on the page.</li></ol><ol start="2"><li>Available for sale for just a couple years, iPod Socks were a series of pouches for iPods woven like socks, and came as a package with six colors: grey, orange, pink, blue, green, and purple. For a limited time, they were also available in human sizes at the Apple Company Store in Cupertino.</li></ol><ol start="3"><li>Known now as a feature that allows videos to be quickly taken by pressing and holding the shutter button on modern iPhones, the Apple QuickTake was a line of video cameras that could be used tethered to a Mac, or on the go thanks to AA batteries.</li></ol><ol start="4"><li>Released in 2006, the iPod Radio Remote was an attachment for then-new iPods that was shaped like a then-unreleased clip-style iPod Shuffle, that allowed compatible iPod users to use their iPods as an FM Radio tuner.</li></ol><details><summary>Compilation Results</summary><div class="details">
+<span class="splashcomment">// We want this error type to be usable as ProcessingCoordinator.Error
+// What changes would you make?</span>
+<span class="splashkeyword">enum</span> &lt;# <span class="splashtype">My ProcessingCoordinator Error Type</span> #&gt;: <span class="splashtype">Error</span> {
+    <span class="splashkeyword">case</span> notFound
+    <span class="splashcomment">// ...</span>
+}
+</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>By using extended delimiters for string literals, all special characters including the backslash will be represented as normal characters.</li></ol><ol start="2"><li>Not limited to optionals, any type can conform to <code>ExpressibleByNilLiteral</code> to have a special initializer called if <code>nil</code> is used along with that type.</li></ol><ol start="3"><li>Like integer literals, floating point literals can be expressed in binary, octal, decimal, or hexadecimal forms.</li></ol><ol start="4"><li>Although Dictionaries prohibit it, <code>ExpressibleByDictionaryLiteral</code> allows for multiple entries with the same key.</li></ol><details><summary>Compilation Results</summary><div class="details">
 
-<p>Ben had the misfortune of going first again to show the others the ropes, followed by Fernando and Johnny. Let's check how they did!</p>
+<p>Eager to continue a winning streak, Ben went first, followed by Spencer. Let's see how they did!</p>
 
-<blockquote>4. Released in 2006, the iPod Radio Remote was an attachment for then-new iPods that was shaped like a then-unreleased clip-style iPod Shuffle, that allowed compatible iPod users to use their iPods as an FM Radio tuner.</blockquote>
+<blockquote>1. By using extended delimiters for string literals, all special characters including the backslash will be represented as normal characters.</blockquote>
 
-<p>Johnny doubted this product ever existed and was the compiler error, but unfortunately it was a <em>code completion</em>! <a href="https://www.apple.com/newsroom/2006/01/10Apple-Announces-the-iPod-Radio-Remote/">Learn&nbsp;More&nbsp;→</a></p>
+<p>Both of our completionists thought this was true, and it is indeed a <em>code completion</em>! <a href="https://docs.swift.org/swift-book/ReferenceManual/LexicalStructure.html#ID417">Learn&nbsp;More&nbsp;→</a></p>
 
-<blockquote>3. Known now as a feature that allows videos to be quickly taken by pressing and holding the shutter button on modern iPhones, the Apple QuickTake was a line of video cameras that could be used tethered to a Mac, or on the go thanks to AA batteries.</blockquote>
+<blockquote>2. Not limited to optionals, any type can conform to <code>ExpressibleByNilLiteral</code> to have a special initializer called if <code>nil</code> is used along with that type.</blockquote>
 
-<p>Fernando fumbled last minute and chose this as the error, but it was also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Apple_QuickTake">Learn&nbsp;More&nbsp;→</a></p>
+<p>They both thought this was also factual, and it is indeed a <em>code completion</em>! <a href="https://developer.apple.com/documentation/swift/expressiblebynilliteral">Learn&nbsp;More&nbsp;→</a></p>
 
-<blockquote>2. Available for sale for just a couple years, iPod Socks were a series of pouches for iPods woven like socks, and came as a package with six colors: grey, orange, pink, blue, green, and purple. For a limited time, they were also available in human sizes at the Apple Company Store in Cupertino.</blockquote>
+<blockquote>3. Like integer literals, floating point literals can be expressed in binary, octal, decimal, or hexadecimal forms.</blockquote>
 
-<p>Everyone thought this was true, but it was in fact the <strong>compiler error</strong>, since iPod socks were not only available for sale for nearly a decade, but were unfortunately never available in human sizes… <a href="https://appleinsider.com/articles/12/09/26/apple-removes-ipod-socks-from-online-store">Learn&nbsp;More&nbsp;→</a></p>
+<p>Although Ben initially had some doubts, both of our completionists thought this was true, which is unfortunate because it was the <strong>compiler error</strong>! Although you can define a hexadecimal or decimal floating point number, you cannot do so for binary and octal numbers. <a href="https://docs.swift.org/swift-book/ReferenceManual/LexicalStructure.html#ID416">Learn&nbsp;More&nbsp;→</a></p>
 
-<p>Which means that…</p>
+<p>Which leaves…</p>
 
-<blockquote>1. A key player in pioneering the digital publishing space, Apple made several printer models in 80s and 90s such as the popular ImageWriter and LaserWriter, but they also made the Apple 410 Color Plotter, a printer that used a stylus along with a selection of inks to literally draw shapes and text on the page.</blockquote>
+<blockquote>4. Although Dictionaries prohibit it, <code>ExpressibleByDictionaryLiteral</code> allows for multiple entries with the same key.</blockquote>
 
-<p>…which Ben thought was a bit too outlandish, was still a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Apple_410_Color_Plotter">Learn&nbsp;More&nbsp;→</a></p>
+<p>…which everyone incorrectly thought was the error, but it was a <em>code completion</em> after all! <a href="https://developer.apple.com/documentation/swift/expressiblebydictionaryliteral">Learn&nbsp;More&nbsp;→</a></p>
 
-</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/us/app/mystiko/id1148340942?pt=14724&ct=CodeCompletion1&mt=8">Mystiko</a>. <a href="https://apps.apple.com/us/app/mystiko/id1148340942?pt=14724&ct=CodeCompletion1&mt=8">Click here</a> or search for Mystiko on the iMessage App Store today to give it a try.</p>
-                    <h2>📺 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/1nKP4mz0dpw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/app/apple-store/id1533254320?pt=1765080&ct=CodeCompletion&mt=8">Sticky Widgets</a>! Search for <a href="https://apps.apple.com/app/apple-store/id1533254320?pt=1765080&ct=CodeCompletion&mt=8">Sticky Widgets</a> on the iOS App Store today to give it a try!</p>
+                    <h2>📺 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/wYp1J7LXLf4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="subscribe">
                         <div class="title">Listen for free in your favorite podcast app:</div>
                         <div class="app">
@@ -120,22 +126,13 @@
                     <span>Tagged with: </span>
                     <ul class="tag-list">
                         <li>
-                            <a href="/tags/specialization">Specialization</a>
+                            <a href="/tags/a14">A14</a>
                         </li>
                         <li>
-                            <a href="/tags/frameworks">Frameworks</a>
+                            <a href="/tags/accessibility">Accessibility</a>
                         </li>
                         <li>
-                            <a href="/tags/app-store">App Store</a>
-                        </li>
-                        <li>
-                            <a href="/tags/ipod-socks">iPod Socks</a>
-                        </li>
-                        <li>
-                            <a href="/tags/junior-development">Junior Development</a>
-                        </li>
-                        <li>
-                            <a href="/tags/getting-started">Getting Started</a>
+                            <a href="/tags/testing">Testing</a>
                         </li>
                     </ul>
                 </div>
