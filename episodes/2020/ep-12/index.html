@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="og:site_name" content="CodeCompletion.io"/>
-        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-7"/>
-        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-7"/>
-        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-7"/>
-        <title>Episode 7: Code Completion SE | CodeCompletion.io</title>
-        <meta name="twitter:title" content="Episode 7: Code Completion SE | CodeCompletion.io"/>
-        <meta name="og:title" content="Episode 7: Code Completion SE | CodeCompletion.io"/>
-        <meta name="description" content="We discuss Apple's “Time Flies” September Event, and what it means for developers."/>
-        <meta name="twitter:description" content="We discuss Apple's “Time Flies” September Event, and what it means for developers."/>
-        <meta name="og:description" content="We discuss Apple's “Time Flies” September Event, and what it means for developers."/>
+        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-12"/>
+        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-12"/>
+        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-12"/>
+        <title>Episode 12: The First Rule of Dev Club… | CodeCompletion.io</title>
+        <meta name="twitter:title" content="Episode 12: The First Rule of Dev Club… | CodeCompletion.io"/>
+        <meta name="og:title" content="Episode 12: The First Rule of Dev Club… | CodeCompletion.io"/>
+        <meta name="description" content="We are joined by special guest James McDougall and discuss how he got into development, and how to get your foot in the door as a Junior Developer!"/>
+        <meta name="twitter:description" content="We are joined by special guest James McDougall and discuss how he got into development, and how to get your foot in the door as a Junior Developer!"/>
+        <meta name="og:description" content="We are joined by special guest James McDougall and discuss how he got into development, and how to get your foot in the door as a Junior Developer!"/>
         <meta name="twitter:card" content="summary"/>
         <link rel="stylesheet" href="/styles.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,10 +46,10 @@
         <div class="wrapper">
             <article>
                 <div class="content">
-                    <h1>Episode 7: Code Completion SE</h1>
-                    <p class="metadata">// Episode 7 was originally recorded on Friday, September 18, 2020, and was released on Monday, September 21, 2020.
-                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Johnny Hicks, Ben Gohlke, and Fernando Olivares.
-                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+fmQLEwWk?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 7! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>iOS 14's rushed release.</li><li><a href="https://www.whatsnewinswift.com/?from=5.2&to=5.3">New Features in Swift 5.3</a>.</li><li>The A14 making it's debut on iPad before iPhone.</li><li>The return of Touch ID on the iPad's top button.</li><li>The new Apple One subscription service.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>The code below will output <code>Hello, Ben!</code>. How would you change line 3 so it outputs <code>Hello, Dimitri!</code> instead?</blockquote><pre><code class="splashlineNumbers">1
+                    <h1>Episode 12: The First Rule of Dev Club…</h1>
+                    <p class="metadata">// Episode 12 was originally recorded on Saturday, October 24, 2020, and was released on Monday, October 26, 2020.
+                        <br/>// This episode was hosted by Dimitri Bouniol, with co-host Fernando Olivares, and special guest James McDougall.
+                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+_Rs23LSD?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 12! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code! This time, we are joined by special guest, Dan Morse! Be sure to follow them on Twitter at <a href="https://twitter.com/JamesWMcDougall">@JamesWMcDougall</a>.</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>James's path from audio engineer to app developer.</li><li>How to get an interview when you don't have experience.</li><li>Fudging your resumes, but not lying to the hiring manager.</li></ul><h2>🚧 #CompleteTheCode</h2><p><em>Last</em> week's <em>#CompleteTheCode</em>:</p><blockquote>What sort of crash could easily occur with the following code?</blockquote><pre><code class="splashlineNumbers">1
 2
 3
 4
@@ -60,41 +60,49 @@
 9
 10
 11
-</code><code><span class="splashkeyword">var</span> name = <span class="splashstring">"Dimitri"</span>
-
-<span class="splashkeyword">var</span> introduce = {
-    <span class="splashcomment">// What change can you make to the above line
-    // to output "Dimitri" rather than "Ben"?</span>
-    <span class="splashcall">print</span>(<span class="splashstring">"Hello,</span> \(name)<span class="splashstring">!"</span>)
+12
+13
+14
+15
+</code><code><span class="splashkeyword">class</span> Person: <span class="splashtype">CustomStringConvertible</span> {
+    <span class="splashkeyword">var</span> name: <span class="splashtype">String</span> = <span class="splashstring">""</span>
+    <span class="splashkeyword">unowned var</span> twin: <span class="splashtype">Person</span>?
+    
+    <span class="splashkeyword">private init</span>() { }
+    
+    <span class="splashkeyword">static func</span> makeTwins() -&gt; (<span class="splashtype">Person</span>, <span class="splashtype">Person</span>) {
+        <span class="splashkeyword">let</span> (a, b) = (<span class="splashtype">Person</span>(), <span class="splashtype">Person</span>())
+        a.<span class="splashproperty">twin</span> = b; b.<span class="splashproperty">twin</span> = a
+        
+        <span class="splashkeyword">return</span> (a, b)
+    }
+    
+    <span class="splashkeyword">var</span> description: <span class="splashtype">String</span> { <span class="splashstring">"Twin:</span> \(twin?.<span class="splashproperty">name</span> ?? <span class="splashstring">""</span>)<span class="splashstring">"</span> }
 }
+</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>The UTF-32 view provides access to each character as a 4-byte UInt32, representing the complete range of all 4 billion unicode code points, but in their original, possibly decomposed, forms.</li></ol><ol start="2"><li>The UTF-8 view optimizes for memory at a disadvantage to manipulation speed, since each unicode character may be represented by one or more bytes, making length calculations costly, but necessary for many C APIs.</li></ol><ol start="3"><li>Easily accessibly by treating a string like a collection, the default view represents normalized characters as they would be displayed on screen, even if they were originally decomposed.</li></ol><ol start="4"><li>The UTF-16 view is optimal when interacting with unicode libraries such as Objective-C’s NSString since it vends UInt16 code-points, as is standard in many programing models.</li></ol><details><summary>Compilation Results</summary><div class="details">
 
-name = <span class="splashstring">"Ben"</span>
+<p>As our special guest, James went first, followed by Fernando. Let's see how they did!</p>
 
-<span class="splashcall">introduce</span>()
-</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>Introduced in 1987, the Macintosh SE was a Special Edition of the 128k Mac that was the first Mac to offer a color display as an option, although limited to 8 bits.</li></ol><ol start="2"><li>Introduced 2 years later as a processor update of its predecessor, the Macintosh SE/30 was unofficially expandable to a whopping 128 MB of RAM, an amount that was greater than many future models, and its board and front panel were available as official upgrades for the original Macintosh SE.</li></ol><ol start="3"><li>A surprise to many, the SE naming made a comeback in 2016 as the iPhone SE, a Special Edition of iPhone 6S that used the iPhone 5S case, and would mark a new tier of low-cost iPhones with up-to-date components.</li></ol><ol start="4"><li>Available today, the Apple Watch SE follows in the footsteps of the iPhone SE, but rather than use the internals of the flagship Series 6, it is instead closer to a limited variant of the Series 5, with an S5 package on a chip, but without an always-on display and electrocardiogram sensor.</li></ol><details><summary>Compilation Results</summary><div class="details">
+<blockquote>2. The UTF-8 view optimizes for memory at a disadvantage to manipulation speed, since each unicode character may be represented by one or more bytes, making length calculations costly, but necessary for many C APIs.</blockquote>
 
-<p>This time, Johnny went first, followed by Fernando and Ben. Let's see how they did!</p>
+<p>Both of our completionists thought this was true, and it is indeed a <em>code completion</em>! <a href="https://developer.apple.com/documentation/swift/string#2905656">Learn&nbsp;More&nbsp;→</a></p>
 
-<blockquote>4. Available today, the Apple Watch SE follows in the footsteps of the iPhone SE, but rather than use the internals of the flagship Series 6, it is instead closer to a limited variant of the Series 5, with an S5 package on a chip, but without an always-on display and electrocardiogram sensor.</blockquote>
+<blockquote>1. The UTF-32 view provides access to each character as a 4-byte UInt32, representing the complete range of all 4 billion unicode code points, but in their original, possibly decomposed, forms.</blockquote>
 
-<p>Everyone thought this was true, and given the timing, it would be surprising if they didn't, making this one a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Apple_Watch_SE">Learn&nbsp;More&nbsp;→</a></p>
+<p>James was tempted by this one, but ultimately chose number 3, and Fernando, a contrarian, ignored this wisdom, which is unfortunate because it was the <strong>compiler error</strong>! Although there is a Unicode Scalar View, there is no native utf32 view that vends plain UInt32s… <a href="https://developer.apple.com/documentation/swift/string#2905651">Learn&nbsp;More&nbsp;→</a></p>
 
-<blockquote>3. A surprise to many, the SE naming made a comeback in 2016 as the iPhone SE, a Special Edition of iPhone 6S that used the iPhone 5S case, and would mark a new tier of low-cost iPhones with up-to-date components.</blockquote>
+<blockquote>3. Easily accessibly by treating a string like a collection, the default view represents normalized characters as they would be displayed on screen, even if they were originally decomposed.</blockquote>
 
-<p>Fernando wasn't so sure about this one and detected some code smell, but it was also a <em>code completion</em> after all! <a href="https://en.wikipedia.org/wiki/IPhone_SE_(1st_generation)">Learn&nbsp;More&nbsp;→</a></p>
-
-<blockquote>2. Introduced 2 years later as a processor update of its predecessor, the Macintosh SE/30 was unofficially expandable to a whopping 128 MB of RAM, an amount that was greater than many future models, and its board and front panel were available as official upgrades for the original Macintosh SE.</blockquote>
-
-<p>Johnny wasn't too sure about the first two, but picked this one instead, which was unfortunate since it was also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Macintosh_SE/30">Learn&nbsp;More&nbsp;→</a></p>
+<p>James ultimately though this one was being sneaky, but it was a <em>code completion</em> afterall! <a href="https://developer.apple.com/documentation/swift/string#2905650">Learn&nbsp;More&nbsp;→</a></p>
 
 <p>Which leaves…</p>
 
-<blockquote>1. Introduced in 1987, the Macintosh SE was a Special Edition of the 128k Mac that was the first Mac to offer a color display as an option, although limited to 8 bits.</blockquote>
+<blockquote>4. The UTF-16 view is optimal when interacting with unicode libraries such as Objective-C’s NSString since it vends UInt16 code-points, as is standard in many programing models..</blockquote>
 
-<p>…which Ben could not believe, since it was the <strong>compiler error</strong>! Although color displays were available for some earlier Apple computers, they would not make it to the Macintosh line for a few more years due to memory and processing requirements. Not only that, “SE” did not stand for “Special Edition”, but “System Expansion”! <a href="https://en.wikipedia.org/wiki/Macintosh_SE">Learn&nbsp;More&nbsp;→</a></p>
+<p>…which Fernando should have known but picked anyway, as it was also a <em>code completion</em>. <a href="https://developer.apple.com/documentation/swift/string#2905653">Learn&nbsp;More&nbsp;→</a></p>
 
-</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/app/apple-store/id1525104124?mt=12">Super Easy Timer</a>! Search for <a href="https://apps.apple.com/app/apple-store/id1525104124?mt=12">Super Easy Timer</a> on the Mac App Store today to give it a try!</p>
-                    <h2>📺 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/R-1X6KT6qjY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/app/apple-store/id1525104124?pt=14724&ct=CodeCompletion1&mt=8">Not Phở</a>. <a href="https://apps.apple.com/app/apple-store/id1525104124?pt=14724&ct=CodeCompletion1&mt=8">Click here</a> or search for “Not Pho” on the iOS and macOS App Store today to give it a try.</p>
+                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/SVmn0nafzB0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="subscribe">
                         <div class="title">Listen for free in your favorite podcast app:</div>
                         <div class="app">
@@ -128,28 +136,16 @@ name = <span class="splashstring">"Ben"</span>
                     <span>Tagged with: </span>
                     <ul class="tag-list">
                         <li>
-                            <a href="/tags/apple-event">Apple Event</a>
+                            <a href="/tags/guest-episode">Guest Episode</a>
                         </li>
                         <li>
-                            <a href="/tags/a14">A14</a>
+                            <a href="/tags/interviews">Interviews</a>
                         </li>
                         <li>
-                            <a href="/tags/ios-14">iOS 14</a>
+                            <a href="/tags/getting-started">Getting Started</a>
                         </li>
                         <li>
-                            <a href="/tags/swift">Swift</a>
-                        </li>
-                        <li>
-                            <a href="/tags/touch-id">Touch ID</a>
-                        </li>
-                        <li>
-                            <a href="/tags/apple-one">Apple One</a>
-                        </li>
-                        <li>
-                            <a href="/tags/ipad">iPad</a>
-                        </li>
-                        <li>
-                            <a href="/tags/apple-watch">Apple Watch</a>
+                            <a href="/tags/junior-development">Junior Development</a>
                         </li>
                     </ul>
                 </div>
