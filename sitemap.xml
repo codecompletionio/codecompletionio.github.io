@@ -22,7 +22,13 @@
         <loc>https://codecompletion.io/episodes</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
-        <lastmod>2020-11-03</lastmod>
+        <lastmod>2020-11-11</lastmod>
+    </url>
+    <url>
+        <loc>https://codecompletion.io/episodes/2020/ep-14</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <lastmod>2020-11-11</lastmod>
     </url>
     <url>
         <loc>https://codecompletion.io/episodes/2020/ep-13</loc>
@@ -106,7 +112,13 @@
         <loc>https://codecompletion.io/live</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
-        <lastmod>2020-10-31</lastmod>
+        <lastmod>2020-11-07</lastmod>
+    </url>
+    <url>
+        <loc>https://codecompletion.io/live/2020/ep-14</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <lastmod>2020-11-11</lastmod>
     </url>
     <url>
         <loc>https://codecompletion.io/live/2020/ep-13</loc>

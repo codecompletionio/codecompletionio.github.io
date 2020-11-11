@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="og:site_name" content="CodeCompletion.io"/>
-        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-9"/>
-        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-9"/>
-        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-9"/>
-        <title>Episode 9: Just Enough Research | CodeCompletion.io</title>
-        <meta name="twitter:title" content="Episode 9: Just Enough Research | CodeCompletion.io"/>
-        <meta name="og:title" content="Episode 9: Just Enough Research | CodeCompletion.io"/>
-        <meta name="description" content="We discuss A14 performance leaks, Accessibility, and who to ask to test your apps."/>
-        <meta name="twitter:description" content="We discuss A14 performance leaks, Accessibility, and who to ask to test your apps."/>
-        <meta name="og:description" content="We discuss A14 performance leaks, Accessibility, and who to ask to test your apps."/>
+        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-14"/>
+        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-14"/>
+        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-14"/>
+        <title>Episode 14: We Broke The First Rule of Dev Club | CodeCompletion.io</title>
+        <meta name="twitter:title" content="Episode 14: We Broke The First Rule of Dev Club | CodeCompletion.io"/>
+        <meta name="og:title" content="Episode 14: We Broke The First Rule of Dev Club | CodeCompletion.io"/>
+        <meta name="description" content="We predict the announcements to this week's One More Thing event, then take a deep dive into interviewing like a pro!"/>
+        <meta name="twitter:description" content="We predict the announcements to this week's One More Thing event, then take a deep dive into interviewing like a pro!"/>
+        <meta name="og:description" content="We predict the announcements to this week's One More Thing event, then take a deep dive into interviewing like a pro!"/>
         <meta name="twitter:card" content="summary"/>
         <link rel="stylesheet" href="/styles.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,53 +46,39 @@
         <div class="wrapper">
             <article>
                 <div class="content">
-                    <h1>Episode 9: Just Enough Research</h1>
-                    <p class="metadata">// Episode 9 was originally recorded on Saturday, October 3, 2020, and was released on Monday, October 5, 2020.
-                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Ben Gohlke and Spencer Curtis.
-                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+2ZdkAH0t?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 9! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>New A14 performance leaks.</li><li>Integrating Accessibility in your apps.</li><li>Testing your apps with real users.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>What are the changes you could make to the code below so that we can have a <code>ProcessingCoordinator.Error</code> nested Error type?</blockquote><pre><code class="splashlineNumbers">1
+                    <h1>Episode 14: We Broke The First Rule of Dev Club</h1>
+                    <p class="metadata">// Episode 14 was originally recorded on Saturday, November 7, 2020, and was released on Wednesday, November 11, 2020.
+                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Spencer Curtis and Ben Gohlke.
+                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+DGaQn-yF?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 14! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>What Apple could announce at the One More Time event.</li><li>How to nail an interview like a pro.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>What key API allows for Swift Arrays and Dictionaries to implement Copy-on-Write (CoW)?</blockquote><pre><code class="splashlineNumbers">1
 2
 3
-4
-5
-6
-7
-8
-9
-10
-</code><code><span class="splashkeyword">struct</span> ProcessingCoordinator {
-    <span class="splashcomment">// ...</span>
-}
+</code><code><span class="splashkeyword">let</span> firstArray = [<span class="splashnumber">0</span>, <span class="splashnumber">1</span>, <span class="splashnumber">2</span>]
+<span class="splashkeyword">var</span> secondArray = firstArray <span class="splashcomment">// The underlying storage is still shared here</span>
+secondArray.<span class="splashcall">append</span>(<span class="splashnumber">3</span>) <span class="splashcomment">// The underlying storage is copied first, then updated</span>
+</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>Neuralsort makes use of a convolutional neural network to sort at O(2n) speeds on average, though the worst case can take quadratic time.</li></ol><ol start="2"><li>Spaghetti Sort is capable of sorting its contents at O(n) speeds even in the worst of cases, but requires a quadratic amount of memory in the process.</li></ol><ol start="3"><li>Bogosort uses the power of random shuffling to achieve a computational complexity of O(n) in the best of cases, but is unfortunately not stable in the process.</li></ol><ol start="4"><li>Named after Tim, Timsort is used in Swift 5 to perform sorting needs in Arrays, which is especially tuned to reversing the order of an already sorted collection.</li></ol><details><summary>Compilation Results</summary><div class="details">
 
-<span class="splashcomment">// We want this error type to be usable as ProcessingCoordinator.Error
-// What changes would you make?</span>
-<span class="splashkeyword">enum</span> &lt;# <span class="splashtype">My ProcessingCoordinator Error Type</span> #&gt;: <span class="splashtype">Error</span> {
-    <span class="splashkeyword">case</span> notFound
-    <span class="splashcomment">// ...</span>
-}
-</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>By using extended delimiters for string literals, all special characters including the backslash will be represented as normal characters.</li></ol><ol start="2"><li>Not limited to optionals, any type can conform to <code>ExpressibleByNilLiteral</code> to have a special initializer called if <code>nil</code> is used along with that type.</li></ol><ol start="3"><li>Like integer literals, floating point literals can be expressed in binary, octal, decimal, or hexadecimal forms.</li></ol><ol start="4"><li>Although Dictionaries prohibit it, <code>ExpressibleByDictionaryLiteral</code> allows for multiple entries with the same key.</li></ol><details><summary>Compilation Results</summary><div class="details">
+<p>This time, Ben went first, followed by Spencer. Let's see how they did!</p>
 
-<p>Eager to continue a winning streak, Ben went first, followed by Spencer. Let's see how they did!</p>
+<blockquote>2. Spaghetti Sort is capable of sorting its contents at O(n) speeds even in the worst of cases, but requires a quadratic amount of memory in the process.</blockquote>
 
-<blockquote>1. By using extended delimiters for string literals, all special characters including the backslash will be represented as normal characters.</blockquote>
+<p>Both of our completionists thought this was true, and it is indeed a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Spaghetti_sort">Learn&nbsp;More&nbsp;→</a></p>
 
-<p>Both of our completionists thought this was true, and it is indeed a <em>code completion</em>! <a href="https://docs.swift.org/swift-book/ReferenceManual/LexicalStructure.html#ID417">Learn&nbsp;More&nbsp;→</a></p>
+<blockquote>3. Bogosort uses the power of random shuffling to achieve a computational complexity of O(n) in the best of cases, but is unfortunately not stable in the process.</blockquote>
 
-<blockquote>2. Not limited to optionals, any type can conform to <code>ExpressibleByNilLiteral</code> to have a special initializer called if <code>nil</code> is used along with that type.</blockquote>
+<p>They both thought this was also factual, and it is also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Bogosort">Learn&nbsp;More&nbsp;→</a></p>
 
-<p>They both thought this was also factual, and it is indeed a <em>code completion</em>! <a href="https://developer.apple.com/documentation/swift/expressiblebynilliteral">Learn&nbsp;More&nbsp;→</a></p>
+<blockquote>1. Neuralsort makes use of a convolutional neural network to sort at O(2n) speeds on average, though the worst case can take quadratic time.</blockquote>
 
-<blockquote>3. Like integer literals, floating point literals can be expressed in binary, octal, decimal, or hexadecimal forms.</blockquote>
-
-<p>Although Ben initially had some doubts, both of our completionists thought this was true, which is unfortunate because it was the <strong>compiler error</strong>! Although you can define a hexadecimal or decimal floating point number, you cannot do so for binary and octal numbers. <a href="https://docs.swift.org/swift-book/ReferenceManual/LexicalStructure.html#ID416">Learn&nbsp;More&nbsp;→</a></p>
+<p>Spencer wasn't so sure about this one, which was the right hunch to have since it was the <strong>compiler error</strong>! Neuralsort was completely made up, though right up there with a fictional Blockchain sort, it feels like it's just <em>waiting</em> to be invented.</p>
 
 <p>Which leaves…</p>
 
-<blockquote>4. Although Dictionaries prohibit it, <code>ExpressibleByDictionaryLiteral</code> allows for multiple entries with the same key.</blockquote>
+<blockquote>4. Named after Tim, Timsort is used in Swift 5 to perform sorting needs in Arrays, which is especially tuned to reversing the order of an already sorted collection.</blockquote>
 
-<p>…which everyone incorrectly thought was the error, but it was a <em>code completion</em> after all! <a href="https://developer.apple.com/documentation/swift/expressiblebydictionaryliteral">Learn&nbsp;More&nbsp;→</a></p>
+<p>…which Ben thought for sure was too fishy to be true, but it was a <em>code completion</em> after all! <a href="https://en.wikipedia.org/wiki/Timsort#cite_note-8">Learn&nbsp;More&nbsp;→</a></p>
 
 </div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/app/apple-store/id1533254320?pt=1765080&ct=CodeCompletion&mt=8">Sticky Widgets</a>! Search for <a href="https://apps.apple.com/app/apple-store/id1533254320?pt=1765080&ct=CodeCompletion&mt=8">Sticky Widgets</a> on the iOS App Store today to give it a try!</p>
-                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/wYp1J7LXLf4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/zHu2fC9chzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="subscribe">
                         <div class="title">Listen for free in your favorite podcast app:</div>
                         <div class="app">
@@ -126,13 +112,19 @@
                     <span>Tagged with: </span>
                     <ul class="tag-list">
                         <li>
+                            <a href="/tags/apple-event">Apple Event</a>
+                        </li>
+                        <li>
                             <a href="/tags/a14">A14</a>
                         </li>
                         <li>
-                            <a href="/tags/accessibility">Accessibility</a>
+                            <a href="/tags/mac">Mac</a>
                         </li>
                         <li>
-                            <a href="/tags/testing">Testing</a>
+                            <a href="/tags/airtags">AirTags</a>
+                        </li>
+                        <li>
+                            <a href="/tags/interviews">Interviews</a>
                         </li>
                     </ul>
                 </div>
