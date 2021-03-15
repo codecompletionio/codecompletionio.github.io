@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="og:site_name" content="CodeCompletion.io"/>
-        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-16"/>
-        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-16"/>
-        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-16"/>
-        <title>Episode 16: It's mini in the non-trademarkable kind of way | CodeCompletion.io</title>
-        <meta name="twitter:title" content="Episode 16: It's mini in the non-trademarkable kind of way | CodeCompletion.io"/>
-        <meta name="og:title" content="Episode 16: It's mini in the non-trademarkable kind of way | CodeCompletion.io"/>
-        <meta name="description" content="We discuss Apple's recent mini products, Big Sur's release, and Fernando's new project!"/>
-        <meta name="twitter:description" content="We discuss Apple's recent mini products, Big Sur's release, and Fernando's new project!"/>
-        <meta name="og:description" content="We discuss Apple's recent mini products, Big Sur's release, and Fernando's new project!"/>
+        <link rel="canonical" href="https://codecompletion.io/episodes/2021/ep-22"/>
+        <meta name="twitter:url" content="https://codecompletion.io/episodes/2021/ep-22"/>
+        <meta name="og:url" content="https://codecompletion.io/episodes/2021/ep-22"/>
+        <title>Episode 22: Not a Soapbox | CodeCompletion.io</title>
+        <meta name="twitter:title" content="Episode 22: Not a Soapbox | CodeCompletion.io"/>
+        <meta name="og:title" content="Episode 22: Not a Soapbox | CodeCompletion.io"/>
+        <meta name="description" content="We discuss Fernando's new course and alternative ways of leveing up as a developer."/>
+        <meta name="twitter:description" content="We discuss Fernando's new course and alternative ways of leveing up as a developer."/>
+        <meta name="og:description" content="We discuss Fernando's new course and alternative ways of leveing up as a developer."/>
         <meta name="twitter:card" content="summary"/>
         <link rel="stylesheet" href="/styles.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,47 +46,38 @@
         <div class="wrapper">
             <article>
                 <div class="content">
-                    <h1>Episode 16: It's mini in the non-trademarkable kind of way</h1>
-                    <p class="metadata">// Episode 16 was originally recorded on Thursday, November 19, 2020, and was released on Wednesday, November 25, 2020.
+                    <h1>Episode 22: Not a Soapbox</h1>
+                    <p class="metadata">// Episode 22 was originally recorded on Friday, January 8, 2021, and was released on Monday, March 15, 2021.
                         <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Fernando Olivares and Ben Gohlke.
-                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+wrrSLK6k?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 16! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>More thoughts on the iPhone 12 mini, Mac mini, and HomePod mini.</li><li>Big Sur's release, and the launch issues that came about.</li><li>Fernando's new project, supplemental dev skills, and interview standardization.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>What etymology lead to the random number generator of choice on Apple platforms being named <code>arc4random()</code>?</blockquote><pre><code class="splashlineNumbers">1
-2
-3
-4
-5
-6
-7
-</code><code><span class="splashkeyword">import</span> Darwin
-
-<span class="splashkeyword">public func</span> arc4random() -&gt; <span class="splashtype">UInt32</span>
-
-<span class="splashkeyword">public func</span> arc4random_buf(<span class="splashkeyword">_</span> buffer: <span class="splashtype">UnsafeMutableRawPointer</span>!, <span class="splashkeyword">_</span> numberOfBytes: <span class="splashtype">Int</span>)
-
-<span class="splashkeyword">public func</span> arc4random_uniform(<span class="splashkeyword">_</span> upperBound: <span class="splashtype">UInt32</span>) -&gt; <span class="splashtype">UInt32</span>
-</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><p>We all know and love Swift, which owes its inspiration from Objective-C, which owes <em>its</em> inspiration from Smalltalk!</p><ol><li>Unlike many languages, Smalltalk has no if statement, let alone other control structures. Control flow is instead implemented as methods sent to objects.</li></ol><ol start="2"><li>Like Objective-C, Smalltalk makes use of argument labels on each of a methods arguments, but does not wrap every method call in square brackets.</li></ol><ol start="3"><li>Only six "keywords" are reserved in Smalltalk: true, false, nil, self, super, and thisContext, which are called pseudo-variables in the language.</li></ol><ol start="4"><li>Like many languages in the 80s, Smalltalk uses the dot character to access properties, the semicolon to delineate statements, and curly brackets to denote blocks.</li></ol><details><summary>Compilation Results</summary><div class="details">
+                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+1NI5fPRH?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 22! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>Indie App Spotlight, with three apps for you to check out:<ul><li><a href="https://apps.apple.com/us/app/print-to-size/id949490225?ign-mpt=uo%3D4">Print to Size</a> by <a href="https://twitter.com/sebmolines">Seb</a>,</li><li><a href="https://coppiceapp.com">Coppice</a> by <a href="https://twitter.com/pilky">Martin Pilkington</a>, and</li><li><a href="https://tumult.com/hype/">Tumult Hype</a> by <a href="https://twitter.com/jmfd">Jonathan Deutsch</a>.</li></ul></li></ul><ul><li>Fernando's New Course.</li><li>Teaching and Learning iOS Development.</li></ul><h2>⚠️ Compiler Error</h2><p>This week's theme: FireWire!</p><ol><li>FireWire comes in 3 protocol flavors: FireWire 400 over a 4-pin connector, FireWire 600 over a 6-pin connector, and FireWire 800 over a 9-pin connector.</li></ol><ol start="2"><li>The technology behind FireWire, known as IEEE 1394, was not only used in consumer electronics, but also automobiles, military vehicles, and even satellites.</li></ol><ol start="3"><li>FireWire was expected to reach speeds up to 6.4 Gbps over single mode fiber, but development was largely halted after 2010, and fully withdrawn in 2013.</li></ol><ol start="4"><li>Unlike USB where these is a single host to the topology of connected devices, FireWire implements a pure peer-to-peer network, allowing for multiple hosts and devices to share the same bus for communication.</li></ol><details><summary>Compilation Results</summary><div class="details">
 
 <p>This time, Ben went first, followed by Fernando. Let's see how they did!</p>
 
-<blockquote>2. Like Objective-C, Smalltalk makes use of argument labels on each of a methods arguments, but does not wrap every method call in square brackets.</blockquote>
+<blockquote>4. Unlike USB where these is a single host to the topology of connected devices, FireWire implements a pure peer-to-peer network, allowing for multiple hosts and devices to share the same bus for communication.</blockquote>
 
-<p>Both of our completionists thought this was true, and it is indeed a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Smalltalk#Messages">Learn&nbsp;More&nbsp;→</a></p>
+<p>Both our completionists trusted this to be fact, which it was since it is a <em>code completion</em>!</p>
 
-<blockquote>3. Only six "keywords" are reserved in Smalltalk: true, false, nil, self, super, and thisContext, which are called pseudo-variables in the language.</blockquote>
+<blockquote>2. The technology behind FireWire, known as IEEE 1394, was not only used in consumer electronics, but also automobiles, military vehicles, and even satellites.</blockquote>
 
-<p>They both thought this was also factual, and it is also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Smalltalk#Syntax">Learn&nbsp;More&nbsp;→</a></p>
+<p>Neither of them was tricked by this one either as it was also a <em>code completion</em>!</p>
 
-<blockquote>1. Unlike many languages, Smalltalk has no if statement, let alone other control structures. Control flow is instead implemented as methods sent to objects.</blockquote>
+<blockquote>3. FireWire was expected to reach speeds up to 6.4 Gbps over single mode fiber, but development was largely halted after 2010, and fully withdrawn in 2013.</blockquote>
 
-<p>Ben didn't think Smalltalk was weird enough, but it turns out it is, because was a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Smalltalk#Control_structures">Learn&nbsp;More&nbsp;→</a></p>
+<p>Ben doubted this one, but was deniged his right to change his mind, since it was a <em>code completion</em>!</p>
 
-<p>Which leaves…</p>
+<p>Which means…</p>
 
-<blockquote>4. Like many languages in the 80s, Smalltalk uses the dot character to access properties, the semicolon to delineate statements, and curly brackets to denote blocks.</blockquote>
+<blockquote>1. FireWire comes in 3 protocol flavors: FireWire 400 over a 4-pin connector, FireWire 600 over a 6-pin connector, and FireWire 800 over a 9-pin connector.</blockquote>
 
-<p>…which Fernando was rightfully skeptical of, because this was the <strong>compiler error</strong>! Smalltalk uses the dot character to selineate statements, the semicolon to cascate method calls, and square brackets to denote blocks! <a href="https://en.wikipedia.org/wiki/Smalltalk#Expressions">Learn&nbsp;More&nbsp;→</a></p>
+<p>You guess it, and so did Fernando: the <strong>compiler error</strong>!</p>
+
+<h3>Learn More →</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/IEEE_1394">IEEE 1394 on Wikipedia</a></li>
+</ul>
 
 </div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://www.jonnybcodes.com">JohnnyB</a>'s Bon Voyage eCommerce App course. Visit <a href="http://bon-voyage.app/course">bon-voyage.app/course</a> and be sure to follow Bon Voyage's instructor <a href="https://twitter.com/jonnybcodes">@jonnybcodes</a> on Twitter to learn more and stay up to date with all his courses!</p>
-                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/Qvgdbb7725M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h2>📺 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/JyW7-2I0m64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="subscribe">
                         <div class="title">Listen for free in your favorite podcast app:</div>
                         <div class="app">
@@ -120,28 +111,10 @@
                     <span>Tagged with: </span>
                     <ul class="tag-list">
                         <li>
-                            <a href="/tags/m1">M1</a>
+                            <a href="/tags/indie-app-showcase">Indie App Showcase</a>
                         </li>
                         <li>
-                            <a href="/tags/mac">Mac</a>
-                        </li>
-                        <li>
-                            <a href="/tags/big-sur">Big Sur</a>
-                        </li>
-                        <li>
-                            <a href="/tags/iphone-mini">iPhone mini</a>
-                        </li>
-                        <li>
-                            <a href="/tags/mac-mini">Mac mini</a>
-                        </li>
-                        <li>
-                            <a href="/tags/homepod-mini">HomePod mini</a>
-                        </li>
-                        <li>
-                            <a href="/tags/dev-skills">Dev Skills</a>
-                        </li>
-                        <li>
-                            <a href="/tags/interviews">Interviews</a>
+                            <a href="/tags/teaching">Teaching</a>
                         </li>
                     </ul>
                 </div>
