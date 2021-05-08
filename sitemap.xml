@@ -25,6 +25,12 @@
         <lastmod>2021-05-08</lastmod>
     </url>
     <url>
+        <loc>https://codecompletion.io/episodes/2021/ep-28</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <lastmod>2021-05-08</lastmod>
+    </url>
+    <url>
         <loc>https://codecompletion.io/episodes/2021/ep-27</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
@@ -190,6 +196,12 @@
         <loc>https://codecompletion.io/live</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <lastmod>2021-05-08</lastmod>
+    </url>
+    <url>
+        <loc>https://codecompletion.io/live/2021/ep-28</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
         <lastmod>2021-05-08</lastmod>
     </url>
     <url>
