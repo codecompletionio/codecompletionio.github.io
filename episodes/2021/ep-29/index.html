@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="og:site_name" content="CodeCompletion.io"/>
-        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-5"/>
-        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-5"/>
-        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-5"/>
-        <title>Episode 5: Emacs Should Die a Fiery Death | CodeCompletion.io</title>
-        <meta name="twitter:title" content="Episode 5: Emacs Should Die a Fiery Death | CodeCompletion.io"/>
-        <meta name="og:title" content="Episode 5: Emacs Should Die a Fiery Death | CodeCompletion.io"/>
-        <meta name="description" content="We discuss when to rewrite your code or tackle technical dept, introduce the world to documentation driven development, and discuss why the lack of good documentation may be hurting juniors trying to get established."/>
-        <meta name="twitter:description" content="We discuss when to rewrite your code or tackle technical dept, introduce the world to documentation driven development, and discuss why the lack of good documentation may be hurting juniors trying to get established."/>
-        <meta name="og:description" content="We discuss when to rewrite your code or tackle technical dept, introduce the world to documentation driven development, and discuss why the lack of good documentation may be hurting juniors trying to get established."/>
+        <link rel="canonical" href="https://codecompletion.io/episodes/2021/ep-29"/>
+        <meta name="twitter:url" content="https://codecompletion.io/episodes/2021/ep-29"/>
+        <meta name="og:url" content="https://codecompletion.io/episodes/2021/ep-29"/>
+        <title>Episode 29: Don't Do That | CodeCompletion.io</title>
+        <meta name="twitter:title" content="Episode 29: Don't Do That | CodeCompletion.io"/>
+        <meta name="og:title" content="Episode 29: Don't Do That | CodeCompletion.io"/>
+        <meta name="description" content="We discuss Basecamp's recent messups, and how not do that."/>
+        <meta name="twitter:description" content="We discuss Basecamp's recent messups, and how not do that."/>
+        <meta name="og:description" content="We discuss Basecamp's recent messups, and how not do that."/>
         <meta name="twitter:card" content="summary"/>
         <link rel="stylesheet" href="/styles.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,75 +46,41 @@
         <div class="wrapper">
             <article>
                 <div class="content">
-                    <h1>Episode 5: Emacs Should Die a Fiery Death</h1>
-                    <p class="metadata">// Episode 5 was originally recorded on Friday, September 4, 2020, and was released on Tuesday, September 8, 2020.
-                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Fernando Olivares, Spencer Curtis, and Ben Gohlke.
-                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+KjdOJGRj?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 5! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code on this brand new show!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>When to rewrite a project from scratch, when to buckle down and conquer technical debt, and when to do a little something in between.</li><li>The importance of documenting code, and how the lack of documentation stifles newcomers from becoming established developers.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>Review the following code — what might the developer have overlooked?</blockquote><pre><code class="splashlineNumbers">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-</code><code><span class="splashkeyword">class</span> DateCell: <span class="splashtype">UITableViewCell</span> {
-    
-    <span class="splashkeyword">private static let</span> dateFormatter: <span class="splashtype">DateFormatter</span> = {
-        <span class="splashkeyword">let</span> dateFormatter = <span class="splashtype">DateFormatter</span>()
-        dateFormatter.<span class="splashproperty">dateFormat</span> = <span class="splashstring">"YYYY-MM-dd"</span>
-        <span class="splashkeyword">return</span> dateFormatter
-    }()
-    
-    <span class="splashkeyword">var</span> date: <span class="splashtype">Date</span>? {
-        <span class="splashkeyword">didSet</span> {
-            <span class="splashkeyword">switch</span> date {
-            <span class="splashkeyword">case</span> .<span class="splashdotAccess">some</span>(<span class="splashkeyword">let</span> date):
-                textLabel?.<span class="splashproperty">text</span> = <span class="splashtype">Self</span>.<span class="splashproperty">dateFormatter</span>.<span class="splashcall">string</span>(from: date)
-            <span class="splashkeyword">case</span> .<span class="splashdotAccess">none</span>:
-                textLabel?.<span class="splashproperty">text</span> = <span class="splashstring">"N/A"</span>
-            }
-        }
-    }
-    
-}
-</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>Although the same can be done using modifier and arrow keys, the text cursor can be quickly moved to the beginning and to the end of a document by using <code>⌃A</code> to go to the beginning, and <code>⌃Z</code> to go to the end.</li></ol><ol start="2"><li>You may know of the <code>⌘⌫</code> command to delete the entire line to the left of the text cursor, but <code>⌃K</code> can be used to delete the line to the right of the text cursor.</li></ol><ol start="3"><li>Available as an alternate clipboard, <code>⌃K</code> and <code>⌃Y</code> represent the kill and yank operations that let you cut and copy text without overriding your main clipboard. The clipboard they use is called the kill ring.</li></ol><ol start="4"><li><code>⌃T</code> is a useful command for transposing two letters that were typed out of order, by flipping the characters on each side of the text cursor.</li></ol><details><summary>Compilation Results</summary><div class="details">
+                    <h1>Episode 29: Don't Do That</h1>
+                    <p class="metadata">// Episode 29 was originally recorded on Monday, May 3, 2021, and was released on Saturday, May 15, 2021.
+                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Spencer Curtis and Ben Gohlke.
+                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+CeZqu0cw?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 29! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li><a href="https://codecompletion.io/jointheclub">Join</a> the Code Completion Club at <a href="https://codecompletion.io/jointheclub">https://codecompletion.io/jointheclub</a>!</li><li>Indie App Spotlight, with three apps for you to check out:<ul><li><a href="https://adrian.schoenig.me/longplay/">Longplay</a> by <a href="https://twitter.com/nhawk">Adrian Schönig</a>,</li><li><a href="https://www.moneyflow.app">Money Flow</a> by <a href="https://twitter.com/romero_ios">Daniel Romero</a>, and</li><li><a href="https://proxyman.io">Proxyman</a> by <a href="https://twitter.com/_nghiatran">Nghia Tran</a>.</li></ul></li></ul><ul><li>Basecamp's mistake</li><li>The Epic vs Apple Trial</li></ul><h2>⚠️ Compiler Error</h2><p>This week's theme: Esoteric Programming Languages!</p><ol><li>Chef is a language designed to make a program look like a cooking recipe, with a stated goal that “Program recipes should not only generate valid output, but be easy to prepare and delicious”.</li></ol><ol start="2"><li>LOLCODE brings coders back to the early days of memes with keywords such as HAI, CAN HAS STDIO, and KTHXBYE, all phrases that may have come up as a caption for a lolcat image.</li></ol><ol start="3"><li>INTERCAL, short for "Compiler Language With No Pronounceable Acronym”, is an older parody language that satirizes aspects of the various programming languages of the time.</li></ol><ol start="4"><li>Inspired by a similarly sounding language, Brainfudge is a language that makes use of only 8 characters: !@#$%^&*; but otherwise uses the same syntax as its inspiration, BrainF*ck.</li></ol><details><summary>Compilation Results</summary><div class="details">
 
-<p>This time, Fernando went first, followed by Spencer and Ben. Let's see how they did!</p>
+<p>This time, Spencer went first, followed by Ben. Let's see how they did!</p>
 
-<blockquote>4. <code>⌃T</code> is a useful command for transposing two letters that were typed out of order, by flipping the characters on each side of the text cursor.</blockquote>
+<blockquote>1. Chef is a language designed to make a program look like a cooking recipe, with a stated goal that “Program recipes should not only generate valid output, but be easy to prepare and delicious”.</blockquote>
 
-<p>Everyone thought this was true, and it is indeed a <em>code completion</em>! <a href="https://jblevins.org/log/kbd">Learn&nbsp;More&nbsp;→</a></p>
+<p>Both Spencer and Ben believed this to be true, which as a <em>code completion</em>, it was!</p>
 
-<blockquote>3. Available as an alternate clipboard, <code>⌃K</code> and <code>⌃Y</code> represent the kill and yank operations that let you cut and copy text without overriding your main clipboard. The clipboard they use is called the kill ring.</blockquote>
+<blockquote>2. LOLCODE brings coders back to the early days of memes with keywords such as HAI, CAN HAS STDIO, and KTHXBYE, all phrases that may have come up as a caption for a lolcat image.</blockquote>
 
-<p>Fernando was doubtful and thought this one was the compiler error, but it was a <em>code completion</em> after all! <a href="https://jblevins.org/log/kbd#fn-kbd-2">Learn&nbsp;More&nbsp;→</a></p>
+<p>No one doubted the existance of LOLCODE either, since it was also a <em>code completion</em>!</p>
 
-<blockquote>2. You may know of the <code>⌘⌫</code> command to delete the entire line to the left of the text cursor, but <code>⌃K</code> can be used to delete the line to the right of the text cursor.</blockquote>
+<blockquote>3. INTERCAL, short for "Compiler Language With No Pronounceable Acronym”, is an older parody language that satirizes aspects of the various programming languages of the time.</blockquote>
 
-<p>This time Ben was hesitant, but this one was also a <em>code completion</em>! <a href="https://support.apple.com/en-us/HT201236">Learn&nbsp;More&nbsp;→</a></p>
+<p>Spencer doubted how crazy crazy programming languages could be, but this was a <em>code completion</em>!</p>
 
-<p>Which leaves…</p>
+<p>Which means…</p>
 
-<blockquote>1.  Although the same can be done using modifier and arrow keys, the text cursor can be quickly moved to the beginning and to the end of a document by using <code>⌃A</code> to go to the beginning, and <code>⌃Z</code> to go to the end.</blockquote>
+<blockquote>4. Inspired by a similarly sounding language, Brainfudge is a language that makes use of only 8 characters: !@#$%^&*; but otherwise uses the same syntax as its inspiration, BrainF*ck.</blockquote>
 
-<p>…which Spencer doubted for all the right reasons, because it was indeed the <strong>compiler error</strong>! <code>⌃A</code> will go to the beginning, but the geginning or a line, not the document, and <code>⌃Z</code> was completemy made up. <code>⌘↑</code> and <code>⌘↓</code> can be used on the mac to go to the top and bottom of the document… <a href="http://wttools.sourceforge.net/emacs-stuff/emacs-keybindings.html">Learn More&nbsp;→</a></p>
+<p>Ben correctly sussed out this <strong>compiler error</strong>! Although BrainF*ck is a real language, Brainfudge as described is not…</p>
 
-<p>It turns out hat most of these bindings are <a href="https://webcache.googleusercontent.com/search?q=cache:JnfVRYsDTsMJ:https://www.hcs.harvard.edu/~jrus/site/system-bindings.html+&cd=1&hl=en&ct=clnk&gl=us&client=safari">fully customizable</a>! Check out the <a href="https://webcache.googleusercontent.com/search?q=cache:JnfVRYsDTsMJ:https://www.hcs.harvard.edu/~jrus/site/system-bindings.html+&cd=1&hl=en&ct=clnk&gl=us&client=safari">list</a> of action methods you can call to extend functionality even further.</p>
+<h3>Learn More →</h3>
+<ul>
+<li><a href="https://esolangs.org/wiki/Chef">Chef</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Esoteric_programming_language">Esoteric programming languages on Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Brainfuck">Brainf*ck on Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/INTERCAL">INTERCAL on Wikipedia</a></li>
+</ul>
 
-</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/app/apple-store/id1525104124?pt=14724&ct=CodeCompletion1&mt=8">Not Phở</a>. <a href="https://apps.apple.com/app/apple-store/id1525104124?pt=14724&ct=CodeCompletion1&mt=8">Click here</a> or search for “Not Pho” on the iOS and macOS App Store today to give it a try.</p>
-                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/4Z4QTFTkcY8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/us/app/mystiko/id1148340942?pt=14724&ct=CodeCompletion1&mt=8">Mystiko</a>. <a href="https://apps.apple.com/us/app/mystiko/id1148340942?pt=14724&ct=CodeCompletion1&mt=8">Click here</a> or search for Mystiko on the iMessage App Store today to give it a try.</p>
+                    <h2>📺 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/tCmSGnuRfpA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="subscribe">
                         <div class="title">Listen for free in your favorite podcast app:</div>
                         <div class="app">
@@ -148,25 +114,31 @@
                     <span>Tagged with: </span>
                     <ul class="tag-list">
                         <li>
-                            <a href="/tags/ddd">DDD</a>
+                            <a href="/tags/indie-app-showcase">Indie App Showcase</a>
                         </li>
                         <li>
-                            <a href="/tags/rewriting-code">Rewriting Code</a>
+                            <a href="/tags/ipad">iPad</a>
                         </li>
                         <li>
-                            <a href="/tags/technical-debt">Technical Debt</a>
+                            <a href="/tags/apple-event">Apple Event</a>
                         </li>
                         <li>
-                            <a href="/tags/documentation">Documentation</a>
+                            <a href="/tags/imac">iMac</a>
                         </li>
                         <li>
-                            <a href="/tags/getting-started">Getting Started</a>
+                            <a href="/tags/m1">M1</a>
                         </li>
                         <li>
-                            <a href="/tags/emacs">Emacs</a>
+                            <a href="/tags/ipad">iPad</a>
                         </li>
                         <li>
-                            <a href="/tags/complete-the-code">Complete the Code</a>
+                            <a href="/tags/apple-tv">Apple TV</a>
+                        </li>
+                        <li>
+                            <a href="/tags/airtags">AirTags</a>
+                        </li>
+                        <li>
+                            <a href="/tags/complete-the-code">Complete The Code</a>
                         </li>
                         <li>
                             <a href="/tags/compiler-error">Compiler Error</a>
