@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="og:site_name" content="CodeCompletion.io"/>
-        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-14"/>
-        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-14"/>
-        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-14"/>
-        <title>Episode 14: We Broke The First Rule of Dev Club | CodeCompletion.io</title>
-        <meta name="twitter:title" content="Episode 14: We Broke The First Rule of Dev Club | CodeCompletion.io"/>
-        <meta name="og:title" content="Episode 14: We Broke The First Rule of Dev Club | CodeCompletion.io"/>
-        <meta name="description" content="We predict the announcements to this week's One More Thing event, then take a deep dive into interviewing like a pro!"/>
-        <meta name="twitter:description" content="We predict the announcements to this week's One More Thing event, then take a deep dive into interviewing like a pro!"/>
-        <meta name="og:description" content="We predict the announcements to this week's One More Thing event, then take a deep dive into interviewing like a pro!"/>
+        <link rel="canonical" href="https://codecompletion.io/episodes/2021/ep-34"/>
+        <meta name="twitter:url" content="https://codecompletion.io/episodes/2021/ep-34"/>
+        <meta name="og:url" content="https://codecompletion.io/episodes/2021/ep-34"/>
+        <title>Episode 34: Design is Hard | CodeCompletion.io</title>
+        <meta name="twitter:title" content="Episode 34: Design is Hard | CodeCompletion.io"/>
+        <meta name="og:title" content="Episode 34: Design is Hard | CodeCompletion.io"/>
+        <meta name="description" content="We discuss Cocoa graphics frameworks and UI design!"/>
+        <meta name="twitter:description" content="We discuss Cocoa graphics frameworks and UI design!"/>
+        <meta name="og:description" content="We discuss Cocoa graphics frameworks and UI design!"/>
         <meta name="twitter:card" content="summary"/>
         <link rel="stylesheet" href="/styles.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,39 +46,23 @@
         <div class="wrapper">
             <article>
                 <div class="content">
-                    <h1>Episode 14: We Broke The First Rule of Dev Club</h1>
-                    <p class="metadata">// Episode 14 was originally recorded on Saturday, November 7, 2020, and was released on Wednesday, November 11, 2020.
-                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Spencer Curtis and Ben Gohlke.
-                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+DGaQn-yF?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 14! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>What Apple could announce at the One More Time event.</li><li>How to nail an interview like a pro.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>What key API allows for Swift Arrays and Dictionaries to implement Copy-on-Write (CoW)?</blockquote><pre><code class="splashlineNumbers">1
+                    <h1>Episode 34: Design is Hard</h1>
+                    <p class="metadata">// Episode 34 was originally recorded on Thursday, June 17, 2021, and was released on Tuesday, June 22, 2021.
+                        <br/>// This episode was hosted by Dimitri Bouniol, with co-host Spencer Curtis.
+                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+NGytS1pD?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 34! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li><a href="https://codecompletion.io/jointheclub">Join</a> the Code Completion Club at <a href="https://codecompletion.io/jointheclub">https://codecompletion.io/jointheclub</a>!</li><li>Indie App Spotlight, with three apps for you to check out:<ul><li><a href="https://wordcounterapp.com">Word Counter</a> by <a href="https://twitter.com/ctietze">Christian Tietze</a></li><li><a href="https://apps.apple.com/us/app/pro-ledger/id1524370871">Pro Ledger</a> by <a href="https://twitter.com/theandynadal">Andy Nadal</a></li></ul></li></ul><ul><li>A tour of Cocoa graphics frameworks: CoreGraphics, AppKit/UIKit, and SwiftUI,<ul><li><a href="https://bignerdranch.com/blog/core-graphics-part-4-a-path-a-path/">Big Nerd Ranch on bezier paths</a></li><li><a href="https://ciechanow.ski/drawing-bezier-curves/">Drawing Bézier Curves by Bartosz Ciechanowshi</a></li><li><a href="https://www.paintcodeapp.com">Paintcode</a></li></ul></li></ul><ul><li>How to improve your design skills and what to look out for.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>Which key command in Xcode will build a template doc comment for the function below?</blockquote><pre><code class="splashlineNumbers">1
 2
 3
-</code><code><span class="splashkeyword">let</span> firstArray = [<span class="splashnumber">0</span>, <span class="splashnumber">1</span>, <span class="splashnumber">2</span>]
-<span class="splashkeyword">var</span> secondArray = firstArray <span class="splashcomment">// The underlying storage is still shared here</span>
-secondArray.<span class="splashcall">append</span>(<span class="splashnumber">3</span>) <span class="splashcomment">// The underlying storage is copied first, then updated</span>
-</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><ol><li>Neuralsort makes use of a convolutional neural network to sort at O(2n) speeds on average, though the worst case can take quadratic time.</li></ol><ol start="2"><li>Spaghetti Sort is capable of sorting its contents at O(n) speeds even in the worst of cases, but requires a quadratic amount of memory in the process.</li></ol><ol start="3"><li>Bogosort uses the power of random shuffling to achieve a computational complexity of O(n) in the best of cases, but is unfortunately not stable in the process.</li></ol><ol start="4"><li>Named after Tim, Timsort is used in Swift 5 to perform sorting needs in Arrays, which is especially tuned to reversing the order of an already sorted collection.</li></ol><details><summary>Compilation Results</summary><div class="details">
+4
+5
+6
+</code><code><span class="splashcomment">// Which key command in Xcode will build a template documentation
+// comment for the function below?</span>
 
-<p>This time, Ben went first, followed by Spencer. Let's see how they did!</p>
-
-<blockquote>2. Spaghetti Sort is capable of sorting its contents at O(n) speeds even in the worst of cases, but requires a quadratic amount of memory in the process.</blockquote>
-
-<p>Both of our completionists thought this was true, and it is indeed a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Spaghetti_sort">Learn&nbsp;More&nbsp;→</a></p>
-
-<blockquote>3. Bogosort uses the power of random shuffling to achieve a computational complexity of O(n) in the best of cases, but is unfortunately not stable in the process.</blockquote>
-
-<p>They both thought this was also factual, and it is also a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Bogosort">Learn&nbsp;More&nbsp;→</a></p>
-
-<blockquote>1. Neuralsort makes use of a convolutional neural network to sort at O(2n) speeds on average, though the worst case can take quadratic time.</blockquote>
-
-<p>Spencer wasn't so sure about this one, which was the right hunch to have since it was the <strong>compiler error</strong>! Neuralsort was completely made up, though right up there with a fictional Blockchain sort, it feels like it's just <em>waiting</em> to be invented.</p>
-
-<p>Which leaves…</p>
-
-<blockquote>4. Named after Tim, Timsort is used in Swift 5 to perform sorting needs in Arrays, which is especially tuned to reversing the order of an already sorted collection.</blockquote>
-
-<p>…which Ben thought for sure was too fishy to be true, but it was a <em>code completion</em> after all! <a href="https://en.wikipedia.org/wiki/Timsort#cite_note-8">Learn&nbsp;More&nbsp;→</a></p>
-
-</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/app/apple-store/id1533254320?pt=1765080&ct=CodeCompletion&mt=8">Sticky Widgets</a>! Search for <a href="https://apps.apple.com/app/apple-store/id1533254320?pt=1765080&ct=CodeCompletion&mt=8">Sticky Widgets</a> on the iOS App Store today to give it a try!</p>
-                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/zHu2fC9chzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<span class="splashkeyword">func</span> doTheCoolThing(name: <span class="splashtype">String</span>, food: <span class="splashtype">Food</span>) -&gt; <span class="splashtype">CoolerThing</span> {
+    ...
+}
+</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://www.jonnybcodes.com">JohnnyB</a>'s Bon Voyage eCommerce App course. Visit <a href="http://bon-voyage.app/course">bon-voyage.app/course</a> and be sure to follow Bon Voyage's instructor <a href="https://twitter.com/jonnybcodes">@jonnybcodes</a> on Twitter to learn more and stay up to date with all his courses!</p>
+                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/e22fO6HghjU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="subscribe">
                         <div class="title">Listen for free in your favorite podcast app:</div>
                         <div class="app">
@@ -112,25 +96,34 @@ secondArray.<span class="splashcall">append</span>(<span class="splashnumber">3<
                     <span>Tagged with: </span>
                     <ul class="tag-list">
                         <li>
-                            <a href="/tags/apple-event">Apple Event</a>
+                            <a href="/tags/indie-app-showcase">Indie App Showcase</a>
                         </li>
                         <li>
-                            <a href="/tags/a14">A14</a>
+                            <a href="/tags/appkit">AppKit</a>
                         </li>
                         <li>
-                            <a href="/tags/mac">Mac</a>
+                            <a href="/tags/uikit">UIKit</a>
                         </li>
                         <li>
-                            <a href="/tags/airtags">AirTags</a>
+                            <a href="/tags/coregraphics">CoreGraphics</a>
                         </li>
                         <li>
-                            <a href="/tags/interviews">Interviews</a>
+                            <a href="/tags/opengl">OpenGL</a>
+                        </li>
+                        <li>
+                            <a href="/tags/swiftui">SwiftUI</a>
+                        </li>
+                        <li>
+                            <a href="/tags/bezier-curve">Bezier Curve</a>
+                        </li>
+                        <li>
+                            <a href="/tags/design">Design</a>
+                        </li>
+                        <li>
+                            <a href="/tags/ui">UI</a>
                         </li>
                         <li>
                             <a href="/tags/complete-the-code">Complete the Code</a>
-                        </li>
-                        <li>
-                            <a href="/tags/compiler-error">Compiler Error</a>
                         </li>
                     </ul>
                 </div>
