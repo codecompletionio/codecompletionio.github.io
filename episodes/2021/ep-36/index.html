@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="og:site_name" content="CodeCompletion.io"/>
-        <link rel="canonical" href="https://codecompletion.io/episodes/2020/ep-15"/>
-        <meta name="twitter:url" content="https://codecompletion.io/episodes/2020/ep-15"/>
-        <meta name="og:url" content="https://codecompletion.io/episodes/2020/ep-15"/>
-        <title>Episode 15: Mini mini M1ni | CodeCompletion.io</title>
-        <meta name="twitter:title" content="Episode 15: Mini mini M1ni | CodeCompletion.io"/>
-        <meta name="og:title" content="Episode 15: Mini mini M1ni | CodeCompletion.io"/>
-        <meta name="description" content="We discuss Apple's recent announcements, including the iPhones 12, what we really want form a mini, and the new M1 chip!"/>
-        <meta name="twitter:description" content="We discuss Apple's recent announcements, including the iPhones 12, what we really want form a mini, and the new M1 chip!"/>
-        <meta name="og:description" content="We discuss Apple's recent announcements, including the iPhones 12, what we really want form a mini, and the new M1 chip!"/>
+        <link rel="canonical" href="https://codecompletion.io/episodes/2021/ep-36"/>
+        <meta name="twitter:url" content="https://codecompletion.io/episodes/2021/ep-36"/>
+        <meta name="og:url" content="https://codecompletion.io/episodes/2021/ep-36"/>
+        <title>Episode 36: O(unable to type-check this expression in reasonable time) | CodeCompletion.io</title>
+        <meta name="twitter:title" content="Episode 36: O(unable to type-check this expression in reasonable time) | CodeCompletion.io"/>
+        <meta name="og:title" content="Episode 36: O(unable to type-check this expression in reasonable time) | CodeCompletion.io"/>
+        <meta name="description" content="We discuss Project Planning and Management!"/>
+        <meta name="twitter:description" content="We discuss Project Planning and Management!"/>
+        <meta name="og:description" content="We discuss Project Planning and Management!"/>
         <meta name="twitter:card" content="summary"/>
         <link rel="stylesheet" href="/styles.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,39 +46,25 @@
         <div class="wrapper">
             <article>
                 <div class="content">
-                    <h1>Episode 15: Mini mini M1ni</h1>
-                    <p class="metadata">// Episode 15 was originally recorded on Saturday, November 14, 2020, and was released on Monday, November 16, 2020.
-                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Johnny Hicks and Spencer Curtis.
-                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+UoIxGfto?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 15! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li>The iPhones, especially the desires around a perfect iPhone mini.</li><li>The M1 processor.</li></ul><h2>🚧 #CompleteTheCode</h2><p><em>Last</em> week's <em>#CompleteTheCode</em>:</p><blockquote>What key API allows for Swift Arrays and Dictionaries to implement Copy-on-Write (CoW)?</blockquote><pre><code class="splashlineNumbers">1
+                    <h1>Episode 36: O(unable to type-check this expression in reasonable time)</h1>
+                    <p class="metadata">// Episode 36 was originally recorded on Thursday, July 1, 2021, and was released on Tuesday, July 6, 2021.
+                        <br/>// This episode was hosted by Dimitri Bouniol, with co-host Spencer Curtis.
+                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+2KPvwNi6?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 36! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li><a href="https://codecompletion.io/jointheclub">Join</a> the Code Completion Club at <a href="https://codecompletion.io/jointheclub">https://codecompletion.io/jointheclub</a>!</li><li>Indie App Spotlight, with two apps for you to check out:<ul><li><a href="https://apps.apple.com/us/app/eventzones/id1541274241">EventZones</a> by <a href="https://twitter.com/BharatDevk">Bharat Kumar</a></li><li><a href="https://timeinorbit.com">Orbit</a> by <a href="https://twitter.com/malinsundberg">Malin Sundberg</a></li></ul></li></ul><ul><li><a href="https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course/">Computational complexity, and Big O notation</a>,</li><li>The importance of documenting algorithms,</li><li>Benchmarking and profiling before optimizing,</li><li>CMTime and all its weirdness.</li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>Which key command in Xcode will allow you to rename the variable you have selected everywhere it appears in the current scope?</blockquote><pre><code class="splashlineNumbers">1
 2
 3
-</code><code><span class="splashkeyword">let</span> firstArray = [<span class="splashnumber">0</span>, <span class="splashnumber">1</span>, <span class="splashnumber">2</span>]
-<span class="splashkeyword">var</span> secondArray = firstArray <span class="splashcomment">// The underlying storage is still shared here</span>
-secondArray.<span class="splashcall">append</span>(<span class="splashnumber">3</span>) <span class="splashcomment">// The underlying storage is copied first, then updated</span>
-</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><p>This week's theme: Languages inspired by Objective-C!</p><ol><li>Hoping to improve Javascript, Objective-J was invented as a way of bringing Objective-C’s class and message sending syntax and more over to web development, but without the *’s.</li></ol><ol start="2"><li>Objective-C++ is a variant of Objective-C that adds the same extensions to C++ as it does to C, effectively duplicating the implementations of classes, exception handling, and closures.</li></ol><ol start="3"><li>Objective-C# is another variant of Objective-C started in 2009 after the success of the iPhone hoping to bring dynamic dispatch to C#, but was not actively maintained.</li></ol><ol start="4"><li>Inspired by an off-hand remark, Objective-Rust is a toy language recently developed that adds some Objective-C syntax to Rust, for better interoperability between the two languages.</li></ol><details><summary>Compilation Results</summary><div class="details">
+4
+5
+6
+7
+</code><code><span class="splashcomment">// Which key command in Xcode will rename the selected variable
+// within the current scope?</span>
 
-<p>This time, Johnny went first, followed by Spencer. Let's see how they did!</p>
-
-<blockquote>2. Objective-C++ is a variant of Objective-C that adds the same extensions to C++ as it does to C, effectively duplicating the implementations of classes, exception handling, and closures.</blockquote>
-
-<p>Both of our completionists thought this was true, and it is indeed a <em>code completion</em>! <a href="https://en.wikipedia.org/wiki/Objective-C#Objective-C++">Learn&nbsp;More&nbsp;→</a></p>
-
-<blockquote>4. Inspired by an off-hand remark, Objective-Rust is a toy language recently developed that adds some Objective-C syntax to Rust, for better interoperability between the two languages.</blockquote>
-
-<p>They both thought this was also factual, and it is also a <em>code completion</em>! <a href="https://belkadan.com/blog/2020/08/Objective-Rust/">Learn&nbsp;More&nbsp;→</a></p>
-
-<blockquote>1. Hoping to improve Javascript, Objective-J was invented as a way of bringing Objective-C’s class and message sending syntax and more over to web development, but without the *’s.</blockquote>
-
-<p>Spencer wasn't so sure about this one, but unlike last week, this was still a <em>code completion</em>! <a href="https://www.cappuccino.dev/learn/objective-j.html">Learn&nbsp;More&nbsp;→</a></p>
-
-<p>Which leaves…</p>
-
-<blockquote>3. Objective-C# is another variant of Objective-C started in 2009 after the success of the iPhone hoping to bring dynamic dispatch to C#, but was not actively maintained.</blockquote>
-
-<p>…which Johnny was right to choose because this was the <strong>compiler error</strong>! As far as we know, C# already has many of the features that would have been desirable from Objective-C, so no one has made a serious attempt at Objective-C#… yet… <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">Learn&nbsp;More&nbsp;→</a></p>
-
-</div></details><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/us/app/mystiko/id1148340942?pt=14724&ct=CodeCompletion1&mt=8">Mystiko</a>. <a href="https://apps.apple.com/us/app/mystiko/id1148340942?pt=14724&ct=CodeCompletion1&mt=8">Click here</a> or search for Mystiko on the iMessage App Store today to give it a try.</p>
-                    <h2>📺 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/pTSehovvpEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<span class="splashkeyword">let</span> lable = <span class="splashtype">UILabel</span>()
+lable.<span class="splashproperty">text</span> = <span class="splashstring">"Name"</span>
+lable.<span class="splashproperty">textColor</span> = .<span class="splashdotAccess">blue</span>
+rootView.<span class="splashcall">addSubview</span>(lable)
+</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/app/apple-store/id1525104124?pt=14724&ct=CodeCompletion1&mt=8">Not Phở</a>. <a href="https://apps.apple.com/app/apple-store/id1525104124?pt=14724&ct=CodeCompletion1&mt=8">Click here</a> or search for “Not Pho” on the iOS and macOS App Store today to give it a try.</p>
+                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/kPofNgYRr6o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="subscribe">
                         <div class="title">Listen for free in your favorite podcast app:</div>
                         <div class="app">
@@ -112,28 +98,40 @@ secondArray.<span class="splashcall">append</span>(<span class="splashnumber">3<
                     <span>Tagged with: </span>
                     <ul class="tag-list">
                         <li>
-                            <a href="/tags/apple-event">Apple Event</a>
+                            <a href="/tags/indie-app-showcase">Indie App Showcase</a>
                         </li>
                         <li>
-                            <a href="/tags/m1">M1</a>
+                            <a href="/tags/compitational-complexity">Compitational Complexity</a>
                         </li>
                         <li>
-                            <a href="/tags/mac">Mac</a>
+                            <a href="/tags/big-o">Big O</a>
                         </li>
                         <li>
-                            <a href="/tags/iphone-12">iPhone 12</a>
+                            <a href="/tags/documentation">Documentation</a>
                         </li>
                         <li>
-                            <a href="/tags/iphone-mini">iPhone mini</a>
+                            <a href="/tags/ddd">DDD</a>
                         </li>
                         <li>
-                            <a href="/tags/mac-mini">Mac mini</a>
+                            <a href="/tags/benchmarking">Benchmarking</a>
+                        </li>
+                        <li>
+                            <a href="/tags/profiling">Profiling</a>
+                        </li>
+                        <li>
+                            <a href="/tags/cmtime">CMTime</a>
+                        </li>
+                        <li>
+                            <a href="/tags/recursive">Recursive</a>
+                        </li>
+                        <li>
+                            <a href="/tags/space-complexity">Space Complexity</a>
+                        </li>
+                        <li>
+                            <a href="/tags/time-complexity">Time Complexity</a>
                         </li>
                         <li>
                             <a href="/tags/complete-the-code">Complete the Code</a>
-                        </li>
-                        <li>
-                            <a href="/tags/compiler-error">Compiler Error</a>
                         </li>
                     </ul>
                 </div>
