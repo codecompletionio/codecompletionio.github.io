@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="og:site_name" content="CodeCompletion.io"/>
-        <link rel="canonical" href="https://codecompletion.io/episodes/2021/ep-54"/>
-        <meta name="twitter:url" content="https://codecompletion.io/episodes/2021/ep-54"/>
-        <meta name="og:url" content="https://codecompletion.io/episodes/2021/ep-54"/>
-        <title>Episode 54: You Are Such a DoIt | CodeCompletion.io</title>
-        <meta name="twitter:title" content="Episode 54: You Are Such a DoIt | CodeCompletion.io"/>
-        <meta name="og:title" content="Episode 54: You Are Such a DoIt | CodeCompletion.io"/>
-        <meta name="description" content="We discuss what makes a great Mac app, and what doesn't…"/>
-        <meta name="twitter:description" content="We discuss what makes a great Mac app, and what doesn't…"/>
-        <meta name="og:description" content="We discuss what makes a great Mac app, and what doesn't…"/>
+        <link rel="canonical" href="https://codecompletion.io/episodes/2021/ep-59"/>
+        <meta name="twitter:url" content="https://codecompletion.io/episodes/2021/ep-59"/>
+        <meta name="og:url" content="https://codecompletion.io/episodes/2021/ep-59"/>
+        <title>Episode 59: Premature Abstraction Is The Actual Root Of All Evil | CodeCompletion.io</title>
+        <meta name="twitter:title" content="Episode 59: Premature Abstraction Is The Actual Root Of All Evil | CodeCompletion.io"/>
+        <meta name="og:title" content="Episode 59: Premature Abstraction Is The Actual Root Of All Evil | CodeCompletion.io"/>
+        <meta name="description" content="We discuss when its appropriate to abstract your code."/>
+        <meta name="twitter:description" content="We discuss when its appropriate to abstract your code."/>
+        <meta name="og:description" content="We discuss when its appropriate to abstract your code."/>
         <meta name="twitter:card" content="summary"/>
         <link rel="stylesheet" href="/styles.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,25 +46,33 @@
         <div class="wrapper">
             <article>
                 <div class="content">
-                    <h1>Episode 54: You Are Such a DoIt</h1>
-                    <p class="metadata">// Episode 54 was originally recorded on Thursday, October 28, 2021, and was released on Tuesday, November 2, 2021.
-                        <br/>// This episode was hosted by Dimitri Bouniol, with co-hosts Spencer Curtis and Fernando Olivares.
-                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+6ctpba8F?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 54! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li><a href="https://codecompletion.io/jointheclub">Join</a> the Code Completion Club at <a href="https://codecompletion.io/jointheclub">https://codecompletion.io/jointheclub</a>!</li><li>Indie App Spotlight, with a new app for you to check out:<ul><li><a href="https://apps.apple.com/app/id1330097506#?platform=iphone">Huh?</a> by <a href="https://twitter.com/yaapete">Peter Yaacoub</a></li></ul></li></ul><ul><li>What makes a great Mac app?<ul><li>Menus and key commands</li><li>Building on positive experiences</li><li>Windowing</li><li>Dogfooding</li><li>Consistent functionality</li><li>Losing UI Knowledge and the Human Interface Guidelines<ul><li><a href="https://mjtsai.com/blog/2021/10/15/old-apple-human-interface-guidelines/">Older HIGs</a></li></ul></li></ul></li></ul><ul><li>Undo, and <a href="https://apple.stackexchange.com/questions/189327/old-versions-of-the-os-x-human-interface-guidelines">“Forgiveness”</a><ul><li>Contextual Menus</li></ul></li></ul><ul><li>The Aftershow’s Rebranding: Commented Out:<ul><li><a href="https://www.folklore.org">Folklore.org</a></li><li>Bash.org:<ul><li><a href="http://bash.org/?104383">Next-level role-play</a></li><li><a href="http://bash.org/?244321">Passwords</a></li></ul></li></ul></li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>How can you make the same enum available in both Swift and Objective-C?</blockquote><pre><code class="splashlineNumbers">1
+                    <h1>Episode 59: Premature Abstraction Is The Actual Root Of All Evil</h1>
+                    <p class="metadata">// Episode 59 was originally recorded on Friday, December 3, 2021, and was released on Tuesday, December 7, 2021.
+                        <br/>// This episode was hosted by Dimitri Bouniol, with co-host Spencer Curtis.
+                    </p><iframe class="audioPlayer" src="https://fireside.fm/player/v2/V95dIYBh+rPh7YWul?theme=dark" frameborder="0" scrolling="no"></iframe><p>Welcome to Code Completion, Episode 59! We are a group of iOS developers and educators hoping to share what we love most about development, Apple technology, and completing your code!</p><p>Follow us <a href="https://twitter.com/CodeCompletion">@CodeCompletion</a> on Twitter to hear about our upcoming livestreams, videos, and other content.</p><p>Be sure to also sign up to our monthly newsletter, where we will recap the topics we discussed, reveal the answers to <em>#CompleteTheCode</em>, and share even more things we learned in between episodes.</p><p>You are what makes this show possible, so please be sure to share this with your friends and family who are also interested in any part of the app development process.</p><h2>⭐️ This Week's Topics</h2><ul><li><a href="https://codecompletion.io/jointheclub">Join</a> the Code Completion Club at <a href="https://codecompletion.io/jointheclub">https://codecompletion.io/jointheclub</a>!</li><li>Indie App Spotlight, with a new app for you to check out:<ul><li><a href="https://apps.apple.com/app/id1494942612#?platform=iphone">Morpho</a> by <a href="https://twitter.com/thinktapwork">Jeremy and Casey</a></li></ul></li></ul><ul><li>Abstraction while coding<ul><li><a href="https://www.youtube.com/channel/UCS0N5baNlQWJCUrhCEo8WlA">Ben Eater</a></li><li><a href="https://www.youtube.com/watch?v=IxXaizglscw">Steve Mould’s Water Computer</a></li></ul></li></ul><ul><li>Mini Review Corner:<ul><li><a href="https://www.amazon.com/Nintendo-Game-Watch-not-machine-specific/dp/B097B1ZJ5T?ref_=ast_sto_dp">Legend of Zelda Game and Watch</a></li></ul></li></ul><h2>🚧 #CompleteTheCode</h2><p>This week's <em>#CompleteTheCode</em>:</p><blockquote>How can you make all calls to `loadImage()` run concurrently, and return images in the same order?</blockquote><pre><code class="splashlineNumbers">1
 2
 3
 4
 5
 6
 7
-</code><code><span class="splashcomment">// How can you make the enum below available in both Swift and Objective-C?</span>
-<span class="splashkeyword">enum</span> Choices {
-    <span class="splashkeyword">case</span> firstOne
-    <span class="splashkeyword">case</span> secondOne
-    <span class="splashkeyword">case</span> thirdOne
-    <span class="splashkeyword">case</span> fourthOne
+8
+9
+10
+11
+</code><code><span class="splashcomment">// How can you make all calls to loadImage() run concurrently,
+//   and return images in the same order?</span>
+<span class="splashkeyword">func</span> loadImages(<span class="splashkeyword">_</span> ids: [<span class="splashtype">UUID</span>]) <span class="splashcall">async</span> {
+    <span class="splashkeyword">var</span> images: [<span class="splashtype">Image</span>] = []
+    <span class="splashkeyword">for</span> id <span class="splashkeyword">in</span> ids {
+        <span class="splashkeyword">let</span> image = await <span class="splashcall">loadImage</span>(id)
+        images.<span class="splashcall">append</span>(image)
+    }
+    
+    <span class="splashkeyword">return</span> images
 }
-</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>⚠️ Compiler Error</h2><p>This week's theme: Classic Mac Apps!</p><ol><li>First Draft was a vector-based drawing app for Classic MacOS that featured a simplified toolset for making basic illustrations and line art.</li><li>BOOM is a Mac game that blends Bomberman and DOOM, featuring Bomberman-style gameplay for one or two players, with enemies and sound effects closely inspirited by DOOM.</li><li>Suitcase was an integral tool for any graphics professional, automating the process of enabling and disabling fonts based on the project at hand.</li><li>Stuffit Expander was the solution for Mac users to decompress archives, and was an integral part of the shareware community, serving as the de-facto filetype for many downloaded Mac apps.</li></ol><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://twitter.com/swiftexercises">Weekly Swift Exercises</a>! Subscribe to the <a href="https://mailchi.mp/hey/weekly-swift-exercise-signup">Mailinglist</a> today to subscribe!</p>
-                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/uP33haUMy-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</code></pre><p>Be sure to <a href="https://twitter.com/intent/tweet?text=%23CompleteTheCode%20cc%2F%20%40CodeCompletion&original_referer=https%3A%2F%2Fcodecompletion.io">tweet us</a> with hashtag <em><a href="https://twitter.com/hashtag/CompleteTheCode">#CompleteTheCode</a></em> if you know the answer!</p><h2>🎁 Sponsor</h2><p>This week's episode of Code Completion is brought to you by <a href="https://apps.apple.com/app/apple-store/id1525104124?pt=14724&ct=CodeCompletion1&mt=8">Not Phở</a>. <a href="https://apps.apple.com/app/apple-store/id1525104124?pt=14724&ct=CodeCompletion1&mt=8">Click here</a> or search for “Not Pho” on the iOS and macOS App Store today to give it a try.</p>
+                    <h2>📹 Watch the Stream</h2><iframe class="videoPlayer" src="https://www.youtube-nocookie.com/embed/VNq9ebcdKWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="subscribe">
                         <div class="title">Listen for free in your favorite podcast app:</div>
                         <div class="app">
@@ -101,19 +109,16 @@
                             <a href="/tags/indie-app-showcase">Indie App Showcase</a>
                         </li>
                         <li>
-                            <a href="/tags/macos">macOS</a>
+                            <a href="/tags/abstraction">Abstraction</a>
                         </li>
                         <li>
-                            <a href="/tags/human-interface-guidelines">Human Interface Guidelines</a>
+                            <a href="/tags/3rd-party-code">3rd Party Code</a>
                         </li>
                         <li>
                             <a href="/tags/complete-the-code">Complete the Code</a>
                         </li>
                         <li>
-                            <a href="/tags/compiler-error">Compiler Error</a>
-                        </li>
-                        <li>
-                            <a href="/tags/commented-out">Commented Out</a>
+                            <a href="/tags/mini-review-corner">Mini Review Corner</a>
                         </li>
                     </ul>
                 </div>
